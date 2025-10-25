@@ -1,5 +1,5 @@
 import { parseUnits, formatUnits, Address } from 'viem';
-import { getContracts, TOKEN_DECIMALS, PROTOCOL_IDENTIFIERS } from '@/config/contracts';
+import { getContracts, TOKEN_DECIMALS } from '@/config/contracts';
 import { Pool } from '@/types';
 
 export type ProtocolType = 'aave' | 'moonwell' | 'compound' | 'seamless' | 'unknown';
@@ -33,15 +33,13 @@ export const getTokenAddress = (tokenSymbol: string, chainId: number): Address |
   const contracts = getContracts(chainId);
   const symbol = tokenSymbol.toUpperCase();
 
-  // Map common token symbols to addresses
-  if (symbol.includes('USDC')) return contracts.USDC;
-  if (symbol.includes('WETH') || symbol.includes('ETH')) return contracts.WETH;
-  if (symbol.includes('DAI')) return contracts.DAI;
-  if (symbol.includes('USDBC')) return contracts.USDbC;
+  if (symbol.includes('USDC')) return contracts.USDC ?? null;
+  if (symbol.includes('WETH') || symbol.includes('ETH')) return contracts.WETH ?? null;
+  if (symbol.includes('DAI')) return contracts.DAI ?? null;
+  if (symbol.includes('USDBC')) return contracts.USDbC ?? null;
 
   return null;
 };
-
 /**
  * Gets token decimals
  */
@@ -65,20 +63,15 @@ export const getProtocolContract = (pool: Pool, chainId: number): Address | null
 
   switch (protocol) {
     case 'aave':
-      return contracts.AAVE_POOL;
+      return contracts.AAVE_POOL ?? null;
 
-    case 'moonwell':
-      // Moonwell has different contracts per token
+    case 'moonwell': {
       const symbol = pool.token_symbol.toUpperCase();
-      if (symbol.includes('USDC')) return contracts.MOONWELL_USDC;
-      if (symbol.includes('WETH') || symbol.includes('ETH')) return contracts.MOONWELL_WETH;
-      if (symbol.includes('DAI')) return contracts.MOONWELL_DAI;
+      if (symbol.includes('USDC')) return contracts.MOONWELL_USDC ?? null;
+      if (symbol.includes('WETH') || symbol.includes('ETH')) return contracts.MOONWELL_WETH ?? null;
+      if (symbol.includes('DAI')) return contracts.MOONWELL_DAI ?? null;
       return null;
-
-    case 'compound':
-    case 'seamless':
-    case 'unknown':
-      return null;
+    }
 
     default:
       return null;
