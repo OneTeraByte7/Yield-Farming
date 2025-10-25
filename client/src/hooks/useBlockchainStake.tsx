@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAccount, useWriteContract, useWaitForTransactionReceipt, useChainId, usePublicClient } from 'wagmi';
+import { useAccount, useWriteContract, useWaitForTransactionReceipt, useChainId, usePublicClient, useConfig } from 'wagmi';
 import { readContract } from 'wagmi/actions';
 import { Address } from 'viem';
 import toast from 'react-hot-toast';
@@ -17,6 +17,7 @@ export const useBlockchainStake = () => {
   const { address } = useAccount();
   const chainId = useChainId();
   const publicClient = usePublicClient();
+  const config = useConfig();
   const { writeContractAsync } = useWriteContract();
   const [isApproving, setIsApproving] = useState(false);
   const [isStaking, setIsStaking] = useState(false);
@@ -42,16 +43,13 @@ export const useBlockchainStake = () => {
   ): Promise<bigint> => {
     if (!address) return 0n;
     try {
-      const allowance = await readContract(
-        {
-          address: tokenAddress,
-          abi: ERC20_ABI,
-          functionName: 'allowance',
-          args: [address, spenderAddress],
-          chainId,
-        },
-        publicClient
-      );
+      const allowance = await readContract(config, {
+        address: tokenAddress,
+        abi: ERC20_ABI,
+        functionName: 'allowance',
+        args: [address, spenderAddress],
+        chainId,
+      });
 
       // readContract returns the raw result (not an object with `data`)
       return (allowance as bigint) || 0n;

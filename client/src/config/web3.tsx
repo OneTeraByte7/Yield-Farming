@@ -3,7 +3,7 @@ import { WagmiProvider } from 'wagmi';
 import { wagmiAdapter, wagmiNetworks } from './wagmiAdapter';
 
 // 1. Get projectId from https://cloud.reown.com
-const projectId = (import.meta as ImportMeta & { env?: Record<string, string | undefined> }).env?.VITE_WALLETCONNECT_PROJECT_ID || 'YOUR_PROJECT_ID';
+const projectId = import.meta.env.VITE_WALLETCONNECT_PROJECT_ID || 'YOUR_PROJECT_ID';
 
 // 2. Create a metadata object
 const metadata = {
