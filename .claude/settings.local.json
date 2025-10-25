@@ -9,7 +9,8 @@
       "Bash(mkdir:*)",
       "Bash(cp:*)",
       "Bash(wc:*)",
-      "Read(//e/DLTITANS/yield/aml-fraud-detector/**)"
+      "Read(//e/DLTITANS/yield/aml-fraud-detector/**)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
