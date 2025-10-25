@@ -19,17 +19,18 @@ export const PoolList: React.FC = () => {
       if (!pools || !Array.isArray(pools) || pools.length === 0) {
         return ['all'];
       }
-      return ['all', ...new Set(
-        pools
-          .map(p => {
-            try {
-              return p?.description?.match(/\((.*?)\)/)?.[1];
-            } catch {
-              return null;
-            }
-          })
-          .filter(Boolean)
-      )];
+      const uniqueChains = new Set<string>();
+      pools.forEach(p => {
+        try {
+          const match = p?.description?.match(/\((.*?)\)/)?.[1];
+          if (match && typeof match === 'string') {
+            uniqueChains.add(match);
+          }
+        } catch {
+          // Skip invalid entries
+        }
+      });
+      return ['all', ...Array.from(uniqueChains)];
     } catch (error) {
       console.error('Error extracting chains:', error);
       return ['all'];
