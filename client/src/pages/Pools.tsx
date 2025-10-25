@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useMemo } from 'react';
 import { Layout } from '@/components/layout/Layout';
 import { PoolList } from '@/components/pool/PoolList';
 import { PoolSyncButton } from '@/components/admin/PoolSyncButton';
@@ -7,11 +7,20 @@ import { ErrorBoundary } from '@/components/common/ErrorBoundary';
 import { useAuthStore } from '@/store/authStore';
 import { Layers } from 'lucide-react';
 import { useRealtimePools } from '@/hooks/useRealtimePools';
+import { getPerformanceLevel } from '@/utils/device';
+import { cn } from '@/utils/cn';
 
 // Memoize the info banner to prevent re-renders
-const InfoBanner = memo(() => (
-  <div className="relative overflow-hidden bg-white/20 dark:bg-[#0d0d12]/90 border border-primary-500/25 dark:border-primary-700/30 rounded-2xl p-6 backdrop-blur-2xl shadow-xl dark:shadow-2xl dark:shadow-primary-900/20">
-    <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-primary-500/10 via-transparent to-primary-500/10 dark:from-primary-700/15 dark:via-transparent dark:to-primary-700/15 opacity-60" aria-hidden="true" />
+const InfoBanner = memo(({ isLowPerf }: { isLowPerf: boolean }) => (
+  <div className={cn(
+    "relative overflow-hidden border rounded-2xl p-6 shadow-xl",
+    isLowPerf
+      ? "bg-white dark:bg-[#0d0d12] border-slate-200 dark:border-slate-700"
+      : "bg-white/20 dark:bg-[#0d0d12]/90 border-primary-500/25 dark:border-primary-700/30 backdrop-blur-2xl dark:shadow-2xl dark:shadow-primary-900/20"
+  )}>
+    {!isLowPerf && (
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-primary-500/10 via-transparent to-primary-500/10 dark:from-primary-700/15 dark:via-transparent dark:to-primary-700/15 opacity-60" aria-hidden="true" />
+    )}
     <div className="flex items-start space-x-4 relative z-10">
       <div className="w-12 h-12 bg-gradient-to-br from-primary-500/20 to-primary-600/15 dark:from-primary-600/30 dark:to-primary-700/25 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg dark:shadow-primary-900/40">
         <Layers className="w-6 h-6 text-primary-600 dark:text-primary-300" />
@@ -50,6 +59,10 @@ export const Pools: React.FC = () => {
   const { user } = useAuthStore();
   useRealtimePools();
 
+  // Detect performance level to reduce effects on low-end devices
+  const performanceLevel = useMemo(() => getPerformanceLevel(), []);
+  const isLowPerf = performanceLevel === 'low';
+
   return (
     <Layout>
       <div className="space-y-6">
@@ -79,7 +92,7 @@ export const Pools: React.FC = () => {
         </div>
 
         {/* Info Banner - Memoized */}
-        <InfoBanner />
+        <InfoBanner isLowPerf={isLowPerf} />
 
         {/* Pools Grid - Wrapped with Error Boundary */}
         <ErrorBoundary>

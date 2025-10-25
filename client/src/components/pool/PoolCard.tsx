@@ -7,14 +7,19 @@ import { StakeModal } from '@/components/stake/StakeModal';
 import { Pool } from '@/types';
 import { formatNumber, formatPercent } from '@/utils/formatters';
 import { cn } from '@/utils/cn';
+import { getPerformanceLevel } from '@/utils/device';
 
 interface PoolCardProps {
   pool: Pool;
 }
 
-export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
+export const PoolCard: React.FC<PoolCardProps> = React.memo(({ pool }) => {
   const [showStakeModal, setShowStakeModal] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
+
+  // Detect performance level to reduce effects on low-end devices
+  const performanceLevel = useMemo(() => getPerformanceLevel(), []);
+  const isLowPerf = performanceLevel === 'low';
 
   // APY badge color - green theme in light mode, emerald in dark mode
   const getApyColor = () => {
@@ -108,19 +113,27 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
 
   return (
     <>
-      <div className="group relative animate-fade-in">
-        {/* Glow effect on hover */}
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500/40 via-primary-600/35 to-primary-700/40 dark:from-primary-600/50 dark:via-primary-500/45 dark:to-primary-600/50 rounded-2xl opacity-0 group-hover:opacity-70 dark:group-hover:opacity-80 blur-xl transition duration-500"></div>
+      <div className={cn("group relative", !isLowPerf && "animate-fade-in")}>
+        {/* Glow effect on hover - disabled on low-performance devices */}
+        {!isLowPerf && (
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500/40 via-primary-600/35 to-primary-700/40 dark:from-primary-600/50 dark:via-primary-500/45 dark:to-primary-600/50 rounded-2xl opacity-0 group-hover:opacity-70 dark:group-hover:opacity-80 blur-xl transition duration-500"></div>
+        )}
 
         <Card
           variant="gradient"
-          className="relative overflow-hidden transition-all duration-500 hover:-translate-y-2 dark:bg-[#0d0d12] dark:border-[#1a1a1f]"
+          className={cn(
+            "relative overflow-hidden dark:bg-[#0d0d12] dark:border-[#1a1a1f]",
+            !isLowPerf && "transition-all duration-500 hover:-translate-y-2"
+          )}
         >
-          {/* Animated Background Gradient */}
-          <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary-400/25 via-primary-500/20 to-primary-700/20 dark:from-primary-700/30 dark:via-primary-600/20 dark:to-primary-500/15 rounded-bl-full opacity-70 group-hover:scale-150 transition-transform duration-700" />
-
-          {/* Shimmer effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 dark:via-primary-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+          {/* Animated Background Gradient - disabled on low-performance devices */}
+          {!isLowPerf && (
+            <>
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary-400/25 via-primary-500/20 to-primary-700/20 dark:from-primary-700/30 dark:via-primary-600/20 dark:to-primary-500/15 rounded-bl-full opacity-70 group-hover:scale-150 transition-transform duration-700" />
+              {/* Shimmer effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 dark:via-primary-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            </>
+          )}
 
           <div className="space-y-3 relative z-10">
             {/* Header */}
@@ -174,8 +187,13 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
             </p>
           )}
 
-          {/* Stats Grid with glassmorphism */}
-          <div className="grid grid-cols-3 gap-3 p-3 bg-gradient-to-br from-white/20 via-primary-500/10 to-primary-500/5 dark:from-slate-900/60 dark:via-slate-800/50 dark:to-slate-900/40 rounded-xl backdrop-blur-xl border border-primary-500/25 dark:border-primary-700/40 shadow-royal-soft mb-3">
+          {/* Stats Grid - lightweight on low-performance devices */}
+          <div className={cn(
+            "grid grid-cols-3 gap-3 p-3 rounded-xl border mb-3",
+            isLowPerf
+              ? "bg-white/90 dark:bg-slate-900/90 border-slate-200 dark:border-slate-700"
+              : "bg-gradient-to-br from-white/20 via-primary-500/10 to-primary-500/5 dark:from-slate-900/60 dark:via-slate-800/50 dark:to-slate-900/40 backdrop-blur-xl border-primary-500/25 dark:border-primary-700/40 shadow-royal-soft"
+          )}>
             <div className="group/stat">
               <div className="flex items-center gap-1.5 text-primary-600 dark:text-primary-400 text-xs mb-1.5 font-medium">
                 <TrendingUp className="w-4 h-4 group-hover/stat:scale-110 transition-transform" />
@@ -208,10 +226,17 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
             </div>
           </div>
 
-          {/* Pending Rewards with animation */}
+          {/* Pending Rewards - lightweight on low-performance devices */}
           {(pool.pendingRewards || 0) > 0 && (
-            <div className="relative overflow-hidden bg-gradient-to-r from-white/22 via-primary-500/18 to-primary-500/12 dark:from-emerald-900/40 dark:via-emerald-800/30 dark:to-emerald-900/25 border border-primary-500/30 dark:border-emerald-600/40 rounded-xl p-3 backdrop-blur-2xl animate-pulse shadow-royal mb-3">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 dark:via-emerald-500/15 to-transparent animate-shimmer"></div>
+            <div className={cn(
+              "relative overflow-hidden rounded-xl p-3 border mb-3",
+              isLowPerf
+                ? "bg-emerald-50 dark:bg-emerald-900/50 border-emerald-300 dark:border-emerald-700"
+                : "bg-gradient-to-r from-white/22 via-primary-500/18 to-primary-500/12 dark:from-emerald-900/40 dark:via-emerald-800/30 dark:to-emerald-900/25 border-primary-500/30 dark:border-emerald-600/40 backdrop-blur-2xl animate-pulse shadow-royal"
+            )}>
+              {!isLowPerf && (
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 dark:via-emerald-500/15 to-transparent animate-shimmer"></div>
+              )}
               <div className="flex items-center justify-between relative">
                 <div>
                   <p className="text-xs text-primary-700 dark:text-emerald-300 font-semibold uppercase tracking-wide mb-1">Pending Rewards</p>
@@ -219,15 +244,23 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
                     {formatNumber(pool.pendingRewards || 0)} {pool.token_symbol}
                   </p>
                 </div>
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-600 dark:from-emerald-600 dark:via-emerald-500 dark:to-emerald-600 rounded-2xl flex items-center justify-center shadow-royal animate-float">
+                <div className={cn(
+                  "w-12 h-12 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-600 dark:from-emerald-600 dark:via-emerald-500 dark:to-emerald-600 rounded-2xl flex items-center justify-center",
+                  !isLowPerf && "shadow-royal animate-float"
+                )}>
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
               </div>
             </div>
           )}
 
-          {/* Estimated Earnings with glassmorphism */}
-          <div className="relative overflow-hidden bg-white/20 dark:bg-slate-900/60 border border-primary-500/25 dark:border-slate-700/50 rounded-xl p-3 backdrop-blur-xl shadow-royal-soft mb-4">
+          {/* Estimated Earnings - lightweight on low-performance devices */}
+          <div className={cn(
+            "relative overflow-hidden border rounded-xl p-3 mb-4",
+            isLowPerf
+              ? "bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700"
+              : "bg-white/20 dark:bg-slate-900/60 border-primary-500/25 dark:border-slate-700/50 backdrop-blur-xl shadow-royal-soft"
+          )}>
             <p className="text-xs text-slate-600 dark:text-blue-300 mb-1 font-semibold uppercase tracking-wide">Est. Annual Earnings (per $1000)</p>
             <p className="text-2xl font-extrabold text-slate-900 dark:text-blue-100">
               ${formatNumber((1000 * pool.apy) / 100)}
@@ -245,9 +278,14 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
             </button>
           )}
 
-          {/* Expanded Details with glassmorphism */}
+          {/* Expanded Details - lightweight on low-performance devices */}
           {showDetails && (
-            <div className="p-3 bg-white/18 dark:bg-slate-900/60 backdrop-blur-2xl rounded-xl border border-primary-500/25 dark:border-slate-700/50 space-y-2 text-sm animate-slide-up shadow-royal-inner mt-3">
+            <div className={cn(
+              "p-3 rounded-xl border space-y-2 text-sm mt-3",
+              isLowPerf
+                ? "bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700"
+                : "bg-white/18 dark:bg-slate-900/60 backdrop-blur-2xl border-primary-500/25 dark:border-slate-700/50 animate-slide-up shadow-royal-inner"
+            )}>
               {/* Project Info */}
               {pool.project && (
                 <div className="flex justify-between items-center">
@@ -467,4 +505,4 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
       />
     </>
   );
-};
+});

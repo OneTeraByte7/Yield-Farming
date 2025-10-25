@@ -5,6 +5,8 @@ import { Input } from '@/components/common/Input';
 import { usePools } from '@/hooks/usePools';
 import { AlertCircle, Search, SlidersHorizontal, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/common/Button';
+import { getPerformanceLevel } from '@/utils/device';
+import { cn } from '@/utils/cn';
 
 export const PoolList: React.FC = () => {
   const { pools, isLoading, error, refetch } = usePools();
@@ -12,6 +14,12 @@ export const PoolList: React.FC = () => {
   const [sortBy, setSortBy] = useState<'apy' | 'tvl' | 'name'>('apy');
   const [filterChain, setFilterChain] = useState<string>('all');
   const [minApy, setMinApy] = useState<number>(0);
+  const [visibleCount, setVisibleCount] = useState(12); // Initial load count
+
+  // Detect performance level
+  const performanceLevel = useMemo(() => getPerformanceLevel(), []);
+  const isLowPerf = performanceLevel === 'low';
+  const maxInitialPools = isLowPerf ? 9 : 12; // Limit initial render on low-end devices
 
   // Extract unique chains - memoized (must be called before any early returns)
   const chains = useMemo(() => {
@@ -109,10 +117,29 @@ export const PoolList: React.FC = () => {
     );
   }
 
+  // Get visible pools based on performance level
+  const visiblePools = useMemo(() => {
+    if (isLowPerf) {
+      return filteredPools.slice(0, visibleCount);
+    }
+    return filteredPools;
+  }, [filteredPools, visibleCount, isLowPerf]);
+
+  const hasMore = isLowPerf && visibleCount < filteredPools.length;
+
+  const loadMore = () => {
+    setVisibleCount(prev => Math.min(prev + 9, filteredPools.length));
+  };
+
   return (
     <div className="space-y-6 animate-fade-in">
-      {/* Filters Section with glassmorphism */}
-      <div className="bg-white/90 dark:bg-[#0d0d12]/95 backdrop-blur-xl rounded-2xl shadow-xl border-2 border-primary-100/50 dark:border-primary-700/30 p-6">
+      {/* Filters Section - lightweight on low-performance devices */}
+      <div className={cn(
+        "rounded-2xl shadow-xl border-2 p-6",
+        isLowPerf
+          ? "bg-white dark:bg-[#0d0d12] border-slate-200 dark:border-slate-700"
+          : "bg-white/90 dark:bg-[#0d0d12]/95 backdrop-blur-xl border-primary-100/50 dark:border-primary-700/30"
+      )}>
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 dark:from-primary-600 dark:to-primary-700 rounded-xl flex items-center justify-center shadow-md shadow-primary-500/30 dark:shadow-primary-600/40">
@@ -244,7 +271,12 @@ export const PoolList: React.FC = () => {
 
       {/* Pools Grid */}
       {filteredPools.length === 0 ? (
-        <div className="flex items-center justify-center min-h-[300px] bg-white/90 dark:bg-[#0d0d12]/95 backdrop-blur-xl rounded-2xl shadow-xl border-2 border-primary-100/50 dark:border-primary-700/30 animate-scale-in">
+        <div className={cn(
+          "flex items-center justify-center min-h-[300px] rounded-2xl shadow-xl border-2 animate-scale-in",
+          isLowPerf
+            ? "bg-white dark:bg-[#0d0d12] border-slate-200 dark:border-slate-700"
+            : "bg-white/90 dark:bg-[#0d0d12]/95 backdrop-blur-xl border-primary-100/50 dark:border-primary-700/30"
+        )}>
           <div className="text-center p-8">
             <div className="w-20 h-20 bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-800/40 dark:to-primary-700/30 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg dark:shadow-primary-900/40">
               <Search className="w-10 h-10 text-primary-600 dark:text-primary-300" />
@@ -265,13 +297,28 @@ export const PoolList: React.FC = () => {
           </div>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredPools.map((pool, index) => (
-            <div key={pool.id} style={{ animationDelay: `${index * 0.05}s` }} className="animate-slide-up">
-              <PoolCard pool={pool} />
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {visiblePools.map((pool, index) => (
+              <div key={pool.id} style={!isLowPerf ? { animationDelay: `${index * 0.05}s` } : {}} className={!isLowPerf ? "animate-slide-up" : ""}>
+                <PoolCard pool={pool} />
+              </div>
+            ))}
+          </div>
+
+          {/* Load More Button for low-performance devices */}
+          {hasMore && (
+            <div className="flex justify-center mt-8">
+              <Button
+                variant="secondary"
+                onClick={loadMore}
+                className="flex items-center space-x-2"
+              >
+                <span>Load More ({filteredPools.length - visibleCount} remaining)</span>
+              </Button>
             </div>
-          ))}
-        </div>
+          )}
+        </>
       )}
     </div>
   );
