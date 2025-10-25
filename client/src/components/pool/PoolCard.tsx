@@ -17,8 +17,8 @@ export const PoolCard: React.FC<PoolCardProps> = React.memo(({ pool }) => {
   const [showStakeModal, setShowStakeModal] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
 
-  // Detect performance level to reduce effects on low-end devices
-  const performanceLevel = useMemo(() => getPerformanceLevel(), []);
+  // Detect performance level to reduce effects on low-end devices (lazy initialization)
+  const [performanceLevel] = useState(() => getPerformanceLevel());
   const isLowPerf = performanceLevel === 'low';
 
   // APY badge color - green theme in light mode, emerald in dark mode

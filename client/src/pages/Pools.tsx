@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react';
+import React, { memo, useState } from 'react';
 import { Layout } from '@/components/layout/Layout';
 import { PoolList } from '@/components/pool/PoolList';
 import { PoolSyncButton } from '@/components/admin/PoolSyncButton';
@@ -59,8 +59,8 @@ export const Pools: React.FC = () => {
   const { user } = useAuthStore();
   useRealtimePools();
 
-  // Detect performance level to reduce effects on low-end devices
-  const performanceLevel = useMemo(() => getPerformanceLevel(), []);
+  // Detect performance level to reduce effects on low-end devices (lazy initialization)
+  const [performanceLevel] = useState(() => getPerformanceLevel());
   const isLowPerf = performanceLevel === 'low';
 
   return (
