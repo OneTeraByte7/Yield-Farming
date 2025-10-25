@@ -14,6 +14,6 @@ yarn-error.log
 .cache/
 client/.env
 server/.env
-aml-fraud-detector/.env
+client/aml-fraud-detector/backend/.env
 *.local
 node_modules/
