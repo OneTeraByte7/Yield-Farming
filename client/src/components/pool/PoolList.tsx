@@ -14,12 +14,12 @@ export const PoolList: React.FC = () => {
   const [sortBy, setSortBy] = useState<'apy' | 'tvl' | 'name'>('apy');
   const [filterChain, setFilterChain] = useState<string>('all');
   const [minApy, setMinApy] = useState<number>(0);
-  const [visibleCount, setVisibleCount] = useState(12); // Initial load count
-
-  // Detect performance level
-  const performanceLevel = useMemo(() => getPerformanceLevel(), []);
+  // Detect performance level (lazy initialization to avoid re-render loops)
+  const [performanceLevel] = useState(() => getPerformanceLevel());
   const isLowPerf = performanceLevel === 'low';
   const maxInitialPools = isLowPerf ? 9 : 12; // Limit initial render on low-end devices
+
+  const [visibleCount, setVisibleCount] = useState(maxInitialPools); // Initial load count
 
   // Extract unique chains - memoized (must be called before any early returns)
   const chains = useMemo(() => {
