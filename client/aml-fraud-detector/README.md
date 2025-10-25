@@ -30,22 +30,25 @@ aml-fraud-detector/
 
 ### Render Configuration
 
-1. **Build Command:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Start Command:**
-   ```bash
-   uvicorn main:app --host 0.0.0.0 --port $PORT
-   ```
-
-3. **Root Directory:**
+1. **Root Directory:**
    ```
    client/aml-fraud-detector/backend
    ```
 
-4. **Environment Variables:**
+2. **Build Command:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Start Command:**
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port $PORT
+   ```
+
+4. **Python Version:**
+   - Specified in `runtime.txt` (Python 3.11.9)
+
+5. **Environment Variables:**
    - `OPENAI_API_KEY`: Your OpenAI API key
    - `ALLOWED_ORIGINS`: Comma-separated list of allowed CORS origins
      ```
