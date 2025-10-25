@@ -14,48 +14,76 @@ export const PoolList: React.FC = () => {
   const [minApy, setMinApy] = useState<number>(0);
 
   // Extract unique chains - memoized (must be called before any early returns)
-  const chains = useMemo(() =>
-    ['all', ...new Set(
-      pools
-        .map(p => p.description?.match(/\((.*?)\)/)?.[1])
-        .filter(Boolean)
-    )],
-    [pools]
-  );
+  const chains = useMemo(() => {
+    try {
+      if (!pools || !Array.isArray(pools) || pools.length === 0) {
+        return ['all'];
+      }
+      return ['all', ...new Set(
+        pools
+          .map(p => {
+            try {
+              return p?.description?.match(/\((.*?)\)/)?.[1];
+            } catch {
+              return null;
+            }
+          })
+          .filter(Boolean)
+      )];
+    } catch (error) {
+      console.error('Error extracting chains:', error);
+      return ['all'];
+    }
+  }, [pools]);
 
   // Filter and sort pools - memoized (must be called before any early returns)
-  const filteredPools = useMemo(() =>
-    pools
-      .filter(pool => {
-        const matchesSearch = pool.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                            pool.token_symbol.toLowerCase().includes(searchTerm.toLowerCase());
-        const matchesChain = filterChain === 'all' ||
-                            pool.description?.includes(`(${filterChain})`);
-        const matchesApy = pool.apy >= minApy;
-        return matchesSearch && matchesChain && matchesApy;
-      })
-      .sort((a, b) => {
-        switch (sortBy) {
-          case 'apy':
-            return b.apy - a.apy;
-          case 'tvl':
-            return b.total_staked - a.total_staked;
-          case 'name':
-            return a.name.localeCompare(b.name);
-          default:
+  const filteredPools = useMemo(() => {
+    try {
+      if (!pools || !Array.isArray(pools)) {
+        return [];
+      }
+      return pools
+        .filter(pool => {
+          try {
+            const matchesSearch = pool?.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                                pool?.token_symbol?.toLowerCase().includes(searchTerm.toLowerCase());
+            const matchesChain = filterChain === 'all' ||
+                                pool?.description?.includes(`(${filterChain})`);
+            const matchesApy = (pool?.apy || 0) >= minApy;
+            return matchesSearch && matchesChain && matchesApy;
+          } catch {
+            return false;
+          }
+        })
+        .sort((a, b) => {
+          try {
+            switch (sortBy) {
+              case 'apy':
+                return (b?.apy || 0) - (a?.apy || 0);
+              case 'tvl':
+                return (b?.total_staked || 0) - (a?.total_staked || 0);
+              case 'name':
+                return (a?.name || '').localeCompare(b?.name || '');
+              default:
+                return 0;
+            }
+          } catch {
             return 0;
-        }
-      }),
-    [pools, searchTerm, filterChain, minApy, sortBy]
-  );
+          }
+        });
+    } catch (error) {
+      console.error('Error filtering pools:', error);
+      return [];
+    }
+  }, [pools, searchTerm, filterChain, minApy, sortBy]);
 
   // Memoize statistics calculations (must be called before any early returns)
   const stats = useMemo(() => ({
     avgApy: filteredPools.length > 0
-      ? (filteredPools.reduce((sum, p) => sum + p.apy, 0) / filteredPools.length).toFixed(2)
+      ? (filteredPools.reduce((sum, p) => sum + (p.apy || 0), 0) / filteredPools.length).toFixed(2)
       : '0.00',
-    totalTvl: (filteredPools.reduce((sum, p) => sum + p.total_staked, 0) / 1000000).toFixed(2),
-    yourStaked: filteredPools.reduce((sum, p) => sum + p.yourStake, 0).toFixed(2)
+    totalTvl: (filteredPools.reduce((sum, p) => sum + (p.total_staked || 0), 0) / 1000000).toFixed(2),
+    yourStaked: filteredPools.reduce((sum, p) => sum + (p.yourStake || 0), 0).toFixed(2)
   }), [filteredPools]);
 
   if (isLoading) {
