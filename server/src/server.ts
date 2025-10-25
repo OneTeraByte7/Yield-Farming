@@ -18,7 +18,20 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: config.frontendUrl,
+  origin: (origin, callback) => {
+    const allowedOrigins = config.frontendUrls;
+
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+
+    // Check if origin is in allowed list or matches Vercel preview pattern
+    if (allowedOrigins.includes(origin) ||
+        origin.match(/^https:\/\/yield-farming.*\.vercel\.app$/)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
