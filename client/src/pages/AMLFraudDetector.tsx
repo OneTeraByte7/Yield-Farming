@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Layout } from '@/components/layout/Layout';
-import { useTheme } from '@/store/themeStore';
+import { useThemeStore } from '@/store/themeStore';
 
 export const AMLFraudDetector: React.FC = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const location = useLocation();
-  const { theme } = useTheme();
+  const { theme } = useThemeStore();
 
   // Handle screen switching from URL query parameters
   useEffect(() => {
