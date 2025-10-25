@@ -7,6 +7,8 @@ from datetime import datetime
 import pandas as pd
 from fastapi import FastAPI, File, UploadFile, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from typing import List, Dict, Any
 from dotenv import load_dotenv
 import asyncio
@@ -144,6 +146,9 @@ def get_db():
     try: yield db
     finally: db.close()
 
+# Get current directory for serving static files
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
 @app.post("/analyze-transactions/", response_model=List[Transaction])
 async def create_upload_file(file: UploadFile = File(...), db: Session = Depends(get_db)):
     contents = await file.read()
@@ -252,5 +257,36 @@ def read_transactions(skip: int = 0, limit: int = 100, db: Session = Depends(get
             ai_analysis=tx_from_db.ai_analysis
         )
         results.append(validated_tx)
-        
+
     return results
+
+# --- Static File Serving (MUST BE LAST) ---
+# These routes should be defined last to avoid conflicts with API routes
+
+@app.get("/")
+async def read_root():
+    """Serve the main HTML page"""
+    index_path = os.path.join(current_dir, "index.html")
+    if os.path.exists(index_path):
+        return FileResponse(index_path)
+    return {"message": "AML Fraud Detector API is running", "status": "ok"}
+
+@app.get("/{file_name:path}")
+async def serve_static_file(file_name: str):
+    """Serve static files like CSS, JS, SVG (catch-all route)"""
+    # Only serve specific file extensions to prevent security issues
+    allowed_extensions = ['.js', '.css', '.svg', '.png', '.jpg', '.jpeg', '.ico', '.woff', '.woff2', '.ttf', '.json']
+
+    if not any(file_name.endswith(ext) for ext in allowed_extensions):
+        raise HTTPException(status_code=404, detail="File not found")
+
+    file_path = os.path.join(current_dir, file_name)
+
+    # Security check: prevent directory traversal
+    if not os.path.abspath(file_path).startswith(os.path.abspath(current_dir)):
+        raise HTTPException(status_code=403, detail="Access denied")
+
+    if os.path.exists(file_path) and os.path.isfile(file_path):
+        return FileResponse(file_path)
+
+    raise HTTPException(status_code=404, detail="File not found")
