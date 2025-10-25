@@ -34,15 +34,28 @@ export const testChatHistory = async () => {
     const chats = await chatHistoryApi.getUserChats();
     console.log('✅ PASSED: Successfully fetched chats');
     console.log(`Found ${chats.length} chat(s):`, chats);
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('❌ FAILED: Error fetching chats');
-    console.error('Error:', error.response?.data || error.message);
-    if (error.response?.status === 401) {
-      console.log('→ Authentication error. Try logging out and back in.');
+
+    const isAxiosLike = (
+      e: unknown
+    ): e is { response?: { data?: unknown; status?: number }; message?: string } =>
+      typeof e === 'object' && e !== null && 'response' in e;
+
+    if (isAxiosLike(error)) {
+      console.error('Error:', error.response?.data ?? error.message);
+      if (error.response?.status === 401) {
+        console.log('→ Authentication error. Try logging out and back in.');
+      }
+      if (error.response?.status === 404) {
+        console.log('→ Endpoint not found. Check if server is running.');
+      }
+    } else if (error instanceof Error) {
+      console.error('Error:', error.message);
+    } else {
+      console.error('Error:', String(error));
     }
-    if (error.response?.status === 404) {
-      console.log('→ Endpoint not found. Check if server is running.');
-    }
+
     return;
   }
 
@@ -55,7 +68,7 @@ export const testChatHistory = async () => {
           id: '1',
           role: 'assistant' as const,
           content: 'Test message from diagnostic tool',
-          timestamp: new Date(),
+          timestamp: new Date().toISOString(),
         },
       ],
       investmentProfile: {
@@ -75,12 +88,26 @@ export const testChatHistory = async () => {
     console.log('\n5️⃣ Cleaning up test chat...');
     await chatHistoryApi.deleteChat(savedChat.id);
     console.log('✅ PASSED: Successfully deleted test chat\n');
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('❌ FAILED: Error saving chat');
-    console.error('Error:', error.response?.data || error.message);
 
-    if (error.message?.includes('relation') && error.message?.includes('does not exist')) {
-      console.log('→ Database table not created. Run SUPABASE_SETUP.sql');
+    const isAxiosLike = (
+      e: unknown
+    ): e is { response?: { data?: unknown }; message?: string } =>
+      typeof e === 'object' && e !== null && 'response' in e;
+
+    if (isAxiosLike(error)) {
+      console.error('Error:', error.response?.data ?? error.message);
+      if (typeof error.message === 'string' && error.message.includes('relation') && error.message.includes('does not exist')) {
+        console.log('→ Database table not created. Run SUPABASE_SETUP.sql');
+      }
+    } else if (error instanceof Error) {
+      console.error('Error:', error.message);
+      if (error.message.includes('relation') && error.message.includes('does not exist')) {
+        console.log('→ Database table not created. Run SUPABASE_SETUP.sql');
+      }
+    } else {
+      console.error('Error:', String(error));
     }
     return;
   }
@@ -95,6 +122,12 @@ export const testChatHistory = async () => {
 };
 
 // Make it available globally in browser console
+declare global {
+  interface Window {
+    testChatHistory?: typeof testChatHistory;
+  }
+}
+
 if (typeof window !== 'undefined') {
-  (window as any).testChatHistory = testChatHistory;
+  window.testChatHistory = testChatHistory;
 }

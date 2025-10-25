@@ -9,7 +9,7 @@ const projectId = (import.meta as ImportMeta & { env?: Record<string, string | u
 const metadata = {
   name: 'Yield Farm',
   description: 'Decentralized Yield Farming Platform',
-  url: 'https://yieldfarm.app', // origin must match your domain & subdomain
+  url: 'https://yield-farming-flax.vercel.app', // origin must match your domain & subdomain
   icons: ['https://avatars.githubusercontent.com/u/179229932']
 };
 

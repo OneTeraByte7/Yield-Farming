@@ -21,7 +21,7 @@ const initializeTheme = () => {
       } else {
         document.documentElement.classList.remove('dark');
       }
-    } catch (e) {
+    } catch {
       // If parsing fails, default to light
       document.documentElement.classList.remove('dark');
     }

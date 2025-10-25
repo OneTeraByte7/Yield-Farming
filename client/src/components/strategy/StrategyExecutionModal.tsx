@@ -102,7 +102,6 @@ export const StrategyExecutionModal: React.FC<StrategyExecutionModalProps> = ({
   };
 
   const allExecuted = executedAllocations.length === strategy.allocations.length;
-  const hasErrors = Object.keys(errors).length > 0;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fade-in">

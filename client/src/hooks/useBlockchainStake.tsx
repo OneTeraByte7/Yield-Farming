@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useAccount, useWriteContract, useWaitForTransactionReceipt, useReadContract, useChainId } from 'wagmi';
+import { useAccount, useWriteContract, useWaitForTransactionReceipt, useChainId, usePublicClient } from 'wagmi';
+import { readContract } from 'wagmi/actions';
 import { Address } from 'viem';
 import toast from 'react-hot-toast';
 import { Pool } from '@/types';
@@ -15,6 +16,7 @@ import { ERC20_ABI, AAVE_POOL_ABI, MOONWELL_ABI } from '@/config/abis';
 export const useBlockchainStake = () => {
   const { address } = useAccount();
   const chainId = useChainId();
+  const publicClient = usePublicClient();
   const { writeContractAsync } = useWriteContract();
   const [isApproving, setIsApproving] = useState(false);
   const [isStaking, setIsStaking] = useState(false);
@@ -39,16 +41,20 @@ export const useBlockchainStake = () => {
     spenderAddress: Address
   ): Promise<bigint> => {
     if (!address) return 0n;
-
     try {
-      const allowance = await useReadContract({
-        address: tokenAddress,
-        abi: ERC20_ABI,
-        functionName: 'allowance',
-        args: [address, spenderAddress],
-      });
+      const allowance = await readContract(
+        {
+          address: tokenAddress,
+          abi: ERC20_ABI,
+          functionName: 'allowance',
+          args: [address, spenderAddress],
+          chainId,
+        },
+        publicClient
+      );
 
-      return allowance.data as bigint || 0n;
+      // readContract returns the raw result (not an object with `data`)
+      return (allowance as bigint) || 0n;
     } catch (error) {
       console.error('Error checking allowance:', error);
       return 0n;
@@ -66,6 +72,17 @@ export const useBlockchainStake = () => {
     if (!address) {
       toast.error('Please connect your wallet');
       return false;
+    }
+
+    // Check existing allowance and skip approval if sufficient
+    try {
+      const currentAllowance = await checkAllowance(tokenAddress, spenderAddress);
+      if (currentAllowance >= amount) {
+        toast.success('Sufficient token allowance already granted');
+        return true;
+      }
+    } catch (err) {
+      console.warn('Allowance check failed, proceeding to approve', err);
     }
 
     setIsApproving(true);

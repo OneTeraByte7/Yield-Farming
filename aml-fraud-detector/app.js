@@ -51,7 +51,7 @@ async function initializeApp() {
     
     // Fetch existing data from the backend on page load
     try {
-        const response = await fetch('http://127.0.0.1:8000/transactions/');
+        const response = await fetch('https://yield-aml-detector.onrender.com/transactions/');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         
         transactions = await response.json(); 
@@ -179,7 +179,7 @@ function handleFiles(files) {
 
     showLoadingOverlay('Processing with AI...');
 
-    fetch('http://127.0.0.1:8000/analyze-transactions/', { method: 'POST', body: formData })
+    fetch('hhttps://yield-aml-detector.onrender.com/analyze-transactions/', { method: 'POST', body: formData })
     .then(response => {
         if (!response.ok) return response.json().then(err => { throw new Error(err.detail || 'Server error') });
         return response.json();

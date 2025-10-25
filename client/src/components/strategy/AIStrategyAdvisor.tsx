@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Send, Bot, User, Sparkles, TrendingUp, DollarSign, Target, Loader } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { ChatMessage, UserInvestmentProfile, InvestmentStrategy } from '@/types/strategy';
@@ -84,48 +84,59 @@ export const AIStrategyAdvisor: React.FC = () => {
   }, [currentChatId]);
 
   // Auto-save chat when messages change
-  useEffect(() => {
-    if (messages.length > 1) {
-      // Debounce save to avoid too many requests
-      const timeoutId = setTimeout(() => {
-        saveCurrentChat();
-      }, 2000);
-
-      return () => clearTimeout(timeoutId);
-    }
-  }, [messages, profile, strategies]);
-
-  const saveCurrentChat = async () => {
-    try {
-      console.log('Auto-saving chat...', {
-        messageCount: messages.length,
-        hasProfile: !!profile,
-        hasStrategies: strategies.length > 0,
-        currentChatId
-      });
-
-      const savedChat = await chatHistoryApi.saveChat({
-        messages,
-        investmentProfile: profile,
-        strategies,
-        chatId: currentChatId,
-      });
-
-      console.log('Chat saved successfully:', savedChat.id);
-
-      // Update current chat ID if this was a new chat
-      if (!currentChatId) {
-        setCurrentChatId(savedChat.id);
-        console.log('New chat created with ID:', savedChat.id);
+    const saveCurrentChat = useCallback(async () => {
+      try {
+          console.log('Auto-saving chat...', {
+            messageCount: messages.length,
+            hasProfile: !!profile,
+            hasStrategies: strategies.length > 0,
+            currentChatId
+          });
+    
+          // Serialize messages so timestamp is a string as expected by the API
+                    const serializedMessages = messages.map(msg => ({
+                      ...msg,
+                      timestamp: msg.timestamp instanceof Date
+                        ? msg.timestamp.toISOString()
+                        : typeof msg.timestamp === 'string'
+                          ? msg.timestamp
+                          : String(msg.timestamp),
+                    }));
+    
+          const savedChat = await chatHistoryApi.saveChat({
+            messages: serializedMessages,
+            investmentProfile: profile,
+            strategies: strategies.map(s => ({ ...s })),
+            chatId: currentChatId,
+          });
+    
+          console.log('Chat saved successfully:', savedChat.id);
+    
+          // Update current chat ID if this was a new chat
+          if (!currentChatId) {
+            setCurrentChatId(savedChat.id);
+            console.log('New chat created with ID:', savedChat.id);
+          }
+    } catch (error: unknown) {
+        console.error('Failed to save chat:', error);
+        // Show error for debugging - narrow unknown safely
+        const errWithResponse = error as { response?: { status?: number } } | undefined;
+        if (errWithResponse?.response?.status === 401) {
+          console.error('Authentication error - user may not be logged in');
+        }
       }
-    } catch (error: any) {
-      console.error('Failed to save chat:', error);
-      // Show error for debugging
-      if (error.response?.status === 401) {
-        console.error('Authentication error - user may not be logged in');
+    }, [messages, profile, strategies, currentChatId]);
+  
+    useEffect(() => {
+      if (messages.length > 1) {
+        // Debounce save to avoid too many requests
+        const timeoutId = setTimeout(() => {
+          saveCurrentChat();
+        }, 2000);
+  
+        return () => clearTimeout(timeoutId);
       }
-    }
-  };
+    }, [messages, profile, strategies, saveCurrentChat]);
 
   const loadChat = async (chatId: string) => {
     try {
@@ -134,14 +145,20 @@ export const AIStrategyAdvisor: React.FC = () => {
       if (chat) {
         console.log('Chat loaded:', chat);
         // Convert timestamp strings back to Date objects
-        const loadedMessages = chat.messages.map((msg: any) => ({
-          ...msg,
-          timestamp: new Date(msg.timestamp),
-        }));
-
-        setMessages(loadedMessages);
+                const loadedMessages: ChatMessage[] = (chat.messages || []).map((msg: unknown) => {
+                  const candidate = msg as Partial<ChatMessage> & { timestamp?: string | number | Date };
+                  return {
+                    ...(candidate as ChatMessage),
+                    timestamp: candidate.timestamp ? new Date(candidate.timestamp) : new Date(),
+                  } as ChatMessage;
+                });
+        
+                setMessages(loadedMessages);
         setProfile(chat.investment_profile || {});
-        setStrategies(chat.strategies || []);
+        // Cast incoming chat.strategies to the expected InvestmentStrategy[] shape.
+        // If you need stricter validation/mapping, replace this cast with a mapping that
+        // builds InvestmentStrategy objects explicitly from the API shape.
+        setStrategies((chat.strategies || []) as unknown as InvestmentStrategy[]);
         setCurrentChatId(chat.id);
 
         // Determine current step from profile
@@ -159,9 +176,13 @@ export const AIStrategyAdvisor: React.FC = () => {
           setCurrentStep('investment');
         }
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Failed to load chat:', error);
-      toast.error('Failed to load chat');
+      if (error instanceof Error) {
+        toast.error(error.message || 'Failed to load chat');
+      } else {
+        toast.error('Failed to load chat');
+      }
     }
   };
 
@@ -220,9 +241,13 @@ export const AIStrategyAdvisor: React.FC = () => {
 
       // Process user input for profile building
       processUserInput(userInput);
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('AI Chat Error:', error);
-      toast.error(error.message || 'Failed to get AI response');
+      if (error instanceof Error) {
+        toast.error(error.message || 'Failed to get AI response');
+      } else {
+        toast.error('Failed to get AI response');
+      }
 
       // Fallback to rule-based processing
       processUserInput(userInput);

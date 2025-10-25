@@ -130,9 +130,18 @@ export const GlobalChatbot = () => {
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Chatbot error:', error);
-      toast.error(error.response?.data?.message || 'Failed to get response');
+
+      let toastMessage = 'Failed to get response';
+      if (typeof error === 'object' && error !== null) {
+        const e = error as { response?: { data?: { message?: string } }; message?: string };
+        toastMessage = e.response?.data?.message ?? e.message ?? toastMessage;
+      } else if (typeof error === 'string') {
+        toastMessage = error;
+      }
+
+      toast.error(toastMessage);
 
       // Add error message
       const errorMessage: Message = {
@@ -183,7 +192,7 @@ export const GlobalChatbot = () => {
           }}
         >
           <button
-            onClick={(e) => {
+            onClick={() => {
               // Only toggle chat if not dragging
               if (!hasDragged) {
                 toggleChat();

@@ -111,15 +111,13 @@ export class StrategyService {
       moderatePools = pools.slice(2, 4);
     }
 
-    const selectedPools = [...stablePools, ...moderatePools];
-
     // 60% in stable, 40% in moderate
     const allocations: StrategyAllocation[] = [];
     const stableAmount = profile.investmentAmount * 0.6;
     const moderateAmount = profile.investmentAmount * 0.4;
 
     if (stablePools.length > 0) {
-      stablePools.forEach((pool, idx) => {
+      stablePools.forEach((pool) => {
         const amount = stableAmount / stablePools.length;
         allocations.push({
           poolId: pool.id,
@@ -134,7 +132,7 @@ export class StrategyService {
     }
 
     if (moderatePools.length > 0) {
-      moderatePools.forEach((pool, idx) => {
+      moderatePools.forEach((pool) => {
         const amount = moderateAmount / moderatePools.length;
         allocations.push({
           poolId: pool.id,
@@ -349,7 +347,6 @@ export class StrategyService {
 
     // Weight towards higher APY pools
     const allocations: StrategyAllocation[] = [];
-    let remainingAmount = totalAmount;
 
     sortedPools.forEach((pool, idx) => {
       const weight = (sortedPools.length - idx) / sortedPools.reduce((sum, _, i) => sum + (sortedPools.length - i), 0);
