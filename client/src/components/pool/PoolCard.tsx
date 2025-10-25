@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { TrendingUp, Coins, Users, Info } from 'lucide-react';
 import { Card } from '@/components/common/Card';
 import { Button } from '@/components/common/Button';
@@ -73,18 +73,19 @@ export const PoolCard: React.FC<PoolCardProps> = React.memo(({ pool }) => {
     return 'bg-slate-500/10 dark:bg-slate-800/60 text-slate-700 dark:text-slate-100 border border-slate-500/25 dark:border-slate-600/50';
   };
 
-  // Use chain from pool data or extract from description as fallback - memoized
-  const chain = useMemo(() => {
+  // Use chain from pool data or extract from description as fallback
+  const getChain = () => {
     if (pool.chain) return pool.chain;
     if (pool.description) {
       const match = pool.description.match(/\((.*?)\)/);
       return match ? match[1] : null;
     }
     return null;
-  }, [pool.chain, pool.description]);
+  };
+  const chain = getChain();
 
-  // Calculate pool age in days - memoized
-  const poolAge = useMemo(() => {
+  // Calculate pool age in days
+  const getPoolAge = () => {
     try {
       const createdDate = new Date(pool.created_at);
       const now = new Date();
@@ -103,13 +104,12 @@ export const PoolCard: React.FC<PoolCardProps> = React.memo(({ pool }) => {
     } catch (error) {
       return 'N/A';
     }
-  }, [pool.created_at]);
+  };
+  const poolAge = getPoolAge();
 
-  // Calculate daily and monthly earnings - memoized
-  const earnings = useMemo(() => ({
-    daily: ((1000 * (pool.apy || 0)) / 100 / 365),
-    monthly: ((1000 * (pool.apy || 0)) / 100 / 12)
-  }), [pool.apy]);
+  // Calculate daily and monthly earnings
+  const dailyEarnings = ((1000 * (pool.apy || 0)) / 100 / 365);
+  const monthlyEarnings = ((1000 * (pool.apy || 0)) / 100 / 12);
 
   return (
     <>
@@ -435,13 +435,13 @@ export const PoolCard: React.FC<PoolCardProps> = React.memo(({ pool }) => {
               <div className="flex justify-between items-center">
                 <span className="text-slate-600 dark:text-slate-400 font-medium">Daily Earnings:</span>
                 <span className="font-bold text-emerald-700 dark:text-emerald-300">
-                  ${formatNumber(earnings.daily)} / $1000
+                  ${formatNumber(dailyEarnings)} / $1000
                 </span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-slate-600 dark:text-slate-400 font-medium">Monthly Earnings:</span>
                 <span className="font-bold text-emerald-700 dark:text-emerald-300">
-                  ${formatNumber(earnings.monthly)} / $1000
+                  ${formatNumber(monthlyEarnings)} / $1000
                 </span>
               </div>
               <div className="flex justify-between items-center">

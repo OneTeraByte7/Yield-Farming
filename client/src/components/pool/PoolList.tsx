@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { PoolCard } from './PoolCard';
 import { PoolCardSkeleton } from './PoolCardSkeleton';
 import { Input } from '@/components/common/Input';
@@ -21,8 +21,8 @@ export const PoolList: React.FC = () => {
 
   const [visibleCount, setVisibleCount] = useState(maxInitialPools); // Initial load count
 
-  // Extract unique chains - memoized (must be called before any early returns)
-  const chains = useMemo(() => {
+  // Extract unique chains
+  const getChains = () => {
     try {
       if (!pools || !Array.isArray(pools) || pools.length === 0) {
         return ['all'];
@@ -43,10 +43,11 @@ export const PoolList: React.FC = () => {
       console.error('Error extracting chains:', error);
       return ['all'];
     }
-  }, [pools]);
+  };
+  const chains = getChains();
 
-  // Filter and sort pools - memoized (must be called before any early returns)
-  const filteredPools = useMemo(() => {
+  // Filter and sort pools
+  const getFilteredPools = () => {
     try {
       if (!pools || !Array.isArray(pools)) {
         return [];
@@ -84,16 +85,18 @@ export const PoolList: React.FC = () => {
       console.error('Error filtering pools:', error);
       return [];
     }
-  }, [pools, searchTerm, filterChain, minApy, sortBy]);
+  };
+  const filteredPools = getFilteredPools();
 
-  // Memoize statistics calculations (must be called before any early returns)
-  const stats = useMemo(() => ({
+  // Calculate statistics
+  const getStats = () => ({
     avgApy: filteredPools.length > 0
       ? (filteredPools.reduce((sum, p) => sum + (p.apy || 0), 0) / filteredPools.length).toFixed(2)
       : '0.00',
     totalTvl: (filteredPools.reduce((sum, p) => sum + (p.total_staked || 0), 0) / 1000000).toFixed(2),
     yourStaked: filteredPools.reduce((sum, p) => sum + (p.yourStake || 0), 0).toFixed(2)
-  }), [filteredPools]);
+  });
+  const stats = getStats();
 
   if (isLoading) {
     return (
@@ -118,12 +121,13 @@ export const PoolList: React.FC = () => {
   }
 
   // Get visible pools based on performance level
-  const visiblePools = useMemo(() => {
+  const getVisiblePools = () => {
     if (isLowPerf) {
       return filteredPools.slice(0, visibleCount);
     }
     return filteredPools;
-  }, [filteredPools, visibleCount, isLowPerf]);
+  };
+  const visiblePools = getVisiblePools();
 
   const hasMore = isLowPerf && visibleCount < filteredPools.length;
 
