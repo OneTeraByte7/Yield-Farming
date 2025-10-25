@@ -19,11 +19,15 @@ export class WalletService {
         .select('balance')
         .single();
 
-      if (createError) {
+      if (createError || !newWallet) {
         throw new Error('Failed to create wallet');
       }
 
       wallet = newWallet;
+    }
+
+    if (!wallet) {
+      throw new Error('Wallet not found');
     }
 
     // Get total staked
