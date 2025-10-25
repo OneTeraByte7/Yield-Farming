@@ -22,7 +22,7 @@ from pydantic import BaseModel, ConfigDict # <-- Import ConfigDict
 from openai import AsyncOpenAI
 
 # --- Setup (Database, etc.) ---
-DATABASE_URL = "sqlite:///./aml.db"
+DATABASE_URL = "sqlite:///../database/aml.db"
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
@@ -148,6 +148,7 @@ def get_db():
 
 # Get current directory for serving static files
 current_dir = os.path.dirname(os.path.abspath(__file__))
+frontend_dir = os.path.join(os.path.dirname(current_dir), "frontend")
 
 @app.post("/analyze-transactions/", response_model=List[Transaction])
 async def create_upload_file(file: UploadFile = File(...), db: Session = Depends(get_db)):
@@ -266,7 +267,7 @@ def read_transactions(skip: int = 0, limit: int = 100, db: Session = Depends(get
 @app.get("/")
 async def read_root():
     """Serve the main HTML page"""
-    index_path = os.path.join(current_dir, "index.html")
+    index_path = os.path.join(frontend_dir, "index.html")
     if os.path.exists(index_path):
         return FileResponse(index_path)
     return {"message": "AML Fraud Detector API is running", "status": "ok"}
@@ -280,10 +281,10 @@ async def serve_static_file(file_name: str):
     if not any(file_name.endswith(ext) for ext in allowed_extensions):
         raise HTTPException(status_code=404, detail="File not found")
 
-    file_path = os.path.join(current_dir, file_name)
+    file_path = os.path.join(frontend_dir, file_name)
 
     # Security check: prevent directory traversal
-    if not os.path.abspath(file_path).startswith(os.path.abspath(current_dir)):
+    if not os.path.abspath(file_path).startswith(os.path.abspath(frontend_dir)):
         raise HTTPException(status_code=403, detail="Access denied")
 
     if os.path.exists(file_path) and os.path.isfile(file_path):
