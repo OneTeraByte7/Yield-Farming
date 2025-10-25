@@ -103,7 +103,35 @@ async def analyze_high_risk_with_ai(transactions_to_check: List[Dict]) -> Dict[s
 
 # --- FastAPI App & Endpoints ---
 app = FastAPI()
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+
+# Get allowed origins from environment variable
+allowed_origins_str = os.environ.get("ALLOWED_ORIGINS", "http://localhost:5173")
+allowed_origins = [origin.strip() for origin in allowed_origins_str.split(",")]
+
+# Add wildcard pattern for all Vercel preview deployments
+allowed_origins_patterns = [
+    r"^https://yield-farming.*\.vercel\.app$"
+]
+
+def is_origin_allowed(origin: str) -> bool:
+    """Check if origin is allowed using exact match or regex pattern"""
+    if origin in allowed_origins:
+        return True
+    import re
+    for pattern in allowed_origins_patterns:
+        if re.match(pattern, origin):
+            return True
+    return False
+
+# Configure CORS with dynamic origin checking
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,  # Base list
+    allow_origin_regex=r"^https://yield-farming.*\.vercel\.app$",  # Pattern for all Vercel deployments
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 @app.on_event("startup")
 def on_startup():
