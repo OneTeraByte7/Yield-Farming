@@ -1,0 +1,3202 @@
+[
+  {
+    "transaction_id": "TXNDA58AB",
+    "amount": 8545.01,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T20:53:57.101038",
+    "customer_id": "user_hooperjustin",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "108.12.126.125",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.2; Trident/5.1)",
+      "device_fingerprint_id": "6fbd948f-e273-482c-9bd8-f8fefd79a8c8",
+      "device_status": "New Device",
+      "ip_risk_score": 93,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNF5B69B",
+    "amount": 582.91,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T11:27:57.101560",
+    "customer_id": "user_christopher53",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "145.62.134.173",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 8_4_1 like Mac OS X) AppleWebKit/531.0 (KHTML, like Gecko) FxiOS/12.2n2797.0 Mobile/57Y536 Safari/531.0",
+      "device_fingerprint_id": "1e95136b-2c69-4ed8-b9b7-a5fa5566fe75",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNDB7A84",
+    "amount": 7341.44,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T04:08:57.102010",
+    "customer_id": "user_danielseric",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "218.14.11.214",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; tcy-IN) AppleWebKit/532.16.3 (KHTML, like Gecko) Version/4.0.5 Mobile/8B111 Safari/6532.16.3",
+      "device_fingerprint_id": "99d6e810-32ea-4e53-bc86-2771f40d6a9e",
+      "device_status": "New Device",
+      "ip_risk_score": 81,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNA7D899",
+    "amount": 1504.3,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T03:42:57.102261",
+    "customer_id": "user_anthony05",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "31.131.71.124",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.7.20) Gecko/5804-12-16 07:26:59 Firefox/3.8",
+      "device_fingerprint_id": "74e49bab-32b6-40a2-ac0b-ccd1af6a08b5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4B4C03",
+    "amount": 1423.86,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T22:41:57.102468",
+    "customer_id": "user_sandragordon",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "91.194.186.180",
+      "user_agent": "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/533.0 (KHTML, like Gecko) Chrome/57.0.831.0 Safari/533.0",
+      "device_fingerprint_id": "2848b2bd-2aa7-4e53-8078-b2668858181b",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN69091D",
+    "amount": 6621.77,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T14:02:57.102578",
+    "customer_id": "user_kimberlydavis",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "56.42.113.57",
+      "user_agent": "Mozilla/5.0 (Windows NT 5.0) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/38.0.894.0 Safari/531.2",
+      "device_fingerprint_id": "5c6bda54-0bf2-4948-b076-8297d1c643ef",
+      "device_status": "New Device",
+      "ip_risk_score": 76,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN01C4C2",
+    "amount": 1209.74,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T11:33:57.102820",
+    "customer_id": "user_rhonda36",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "26.39.143.39",
+      "user_agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/35.0.836.0 Safari/535.0",
+      "device_fingerprint_id": "f474a2e2-7521-4af8-a225-e4c116cae928",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNAE9217",
+    "amount": 325.18,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T10:08:57.102908",
+    "customer_id": "user_ojones",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "188.249.155.220",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 13_5_1 like Mac OS X) AppleWebKit/533.0 (KHTML, like Gecko) FxiOS/15.7w4792.0 Mobile/44T828 Safari/533.0",
+      "device_fingerprint_id": "761efede-3572-4b00-817c-0ed3c18a5931",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4C7C2A",
+    "amount": 19873.42,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T01:16:57.103078",
+    "customer_id": "user_rhonda36",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "14.154.120.116",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 5.01; Trident/4.0)",
+      "device_fingerprint_id": "a4704175-a28b-4f9a-a39b-3a119a9ed883",
+      "device_status": "New Device",
+      "ip_risk_score": 96,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC75289",
+    "amount": 901.11,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T20:50:57.103215",
+    "customer_id": "user_wilsonmary",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "93.30.38.198",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; nl-BE) AppleWebKit/531.10.7 (KHTML, like Gecko) Version/4.0.5 Mobile/8B112 Safari/6531.10.7",
+      "device_fingerprint_id": "f515e651-5991-4e47-93d3-15da9dc6c016",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE969FF",
+    "amount": 915.89,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T07:33:57.103291",
+    "customer_id": "user_cindy92",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "159.142.220.177",
+      "user_agent": "Opera/9.18.(Windows NT 5.2; sid-ET) Presto/2.9.171 Version/10.00",
+      "device_fingerprint_id": "8066394c-917b-493c-a0e2-4c89262c8797",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN5E9BB9",
+    "amount": 2142.5,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T15:32:57.103343",
+    "customer_id": "user_wilsonmary",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "93.30.38.198",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_2; rv:1.9.2.20) Gecko/8554-10-12 14:20:35 Firefox/3.8",
+      "device_fingerprint_id": "b7e73232-7b58-4511-bf27-aa4d71bbfc70",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN47465A",
+    "amount": 1166.14,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T02:24:57.103524",
+    "customer_id": "user_benjaminbrenda",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "30.215.119.172",
+      "user_agent": "Opera/8.17.(Windows NT 10.0; ia-FR) Presto/2.9.164 Version/11.00",
+      "device_fingerprint_id": "020516ef-11ba-4228-95bf-aeded946c810",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB02AB5",
+    "amount": 180.53,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T12:12:57.103576",
+    "customer_id": "user_megan91",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "6.24.30.205",
+      "user_agent": "Opera/9.12.(X11; Linux x86_64; mni-IN) Presto/2.9.166 Version/11.00",
+      "device_fingerprint_id": "5e273cfd-827e-497a-b2e1-c8e9a8143a36",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN12F4BC",
+    "amount": 7415.85,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T02:56:57.103622",
+    "customer_id": "user_rhonda36",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "193.186.14.119",
+      "user_agent": "Opera/9.16.(X11; Linux i686; ca-IT) Presto/2.9.172 Version/10.00",
+      "device_fingerprint_id": "d512784d-25da-4c83-bd91-d862bd7a38ba",
+      "device_status": "New Device",
+      "ip_risk_score": 99,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE93E19",
+    "amount": 8972.59,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T16:24:57.103777",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "5.41.220.133",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.0; Trident/4.1)",
+      "device_fingerprint_id": "7b2b9981-71a4-4221-b22f-5f8498ae7026",
+      "device_status": "New Device",
+      "ip_risk_score": 79,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN972E8B",
+    "amount": 1381.07,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T19:13:57.103898",
+    "customer_id": "user_jennifer40",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "79.231.232.208",
+      "user_agent": "Mozilla/5.0 (Windows 98) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/36.0.884.0 Safari/534.2",
+      "device_fingerprint_id": "46e228b0-a52b-4ee1-b71f-2fb729fbdc94",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN888646",
+    "amount": 633.45,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T07:53:57.103991",
+    "customer_id": "user_ojones",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "188.249.155.220",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_4; rv:1.9.4.20) Gecko/8455-07-23 12:23:35 Firefox/3.8",
+      "device_fingerprint_id": "112edf64-3dd6-4841-bb0c-167392084c7a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2CF30A",
+    "amount": 1099.41,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T01:58:57.104169",
+    "customer_id": "user_shannon72",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "177.25.202.148",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1) AppleWebKit/533.49.5 (KHTML, like Gecko) Version/5.0 Safari/533.49.5",
+      "device_fingerprint_id": "bbbaf846-8e40-4b57-ae38-ddd1daf03a91",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB20C3B",
+    "amount": 2411.44,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T02:34:57.104241",
+    "customer_id": "user_amiller",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "85.47.28.249",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 1_1_5 like Mac OS X) AppleWebKit/532.1 (KHTML, like Gecko) CriOS/41.0.823.0 Mobile/93F481 Safari/532.1",
+      "device_fingerprint_id": "7bfe532b-2b60-4590-b16e-07defe7b5723",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN12972F",
+    "amount": 2349.15,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T15:26:57.104328",
+    "customer_id": "user_bryce41",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "142.60.32.89",
+      "user_agent": "Opera/8.92.(Windows NT 4.0; li-NL) Presto/2.9.167 Version/11.00",
+      "device_fingerprint_id": "1922b50c-e44b-45e6-9773-85808cbd9eb7",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN42FAF7",
+    "amount": 5487.18,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T03:09:57.104374",
+    "customer_id": "user_travislopez",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "77.86.97.169",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_11_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/33.0.890.0 Safari/535.2",
+      "device_fingerprint_id": "1a8ed03a-f952-41dc-8978-71423f41acae",
+      "device_status": "New Device",
+      "ip_risk_score": 88,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN15AF1D",
+    "amount": 2137.22,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T03:30:57.104599",
+    "customer_id": "user_danielseric",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "103.254.222.185",
+      "user_agent": "Mozilla/5.0 (Windows 98) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/44.0.887.0 Safari/534.0",
+      "device_fingerprint_id": "6a26c101-09a6-46ae-9c9b-488c1b2f188c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2FE63A",
+    "amount": 23615.06,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T22:40:57.104684",
+    "customer_id": "user_bryce41",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "109.239.40.111",
+      "user_agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_5; rv:1.9.4.20) Gecko/4954-03-10 10:04:13 Firefox/7.0",
+      "device_fingerprint_id": "11e68981-071a-4581-ab73-483bde97cf69",
+      "device_status": "New Device",
+      "ip_risk_score": 75,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2787F2",
+    "amount": 8282.41,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T10:52:57.104981",
+    "customer_id": "user_wilsonmary",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "83.78.102.195",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_6) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/18.0.830.0 Safari/531.2",
+      "device_fingerprint_id": "00e1c809-5cb5-4c11-ad29-2df323f9d6cc",
+      "device_status": "New Device",
+      "ip_risk_score": 100,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN398A9A",
+    "amount": 978.54,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T17:48:57.105176",
+    "customer_id": "user_cassandra93",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "8.133.130.46",
+      "user_agent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/27.0.834.0 Safari/531.0",
+      "device_fingerprint_id": "a0a6999c-1ab2-40dd-bfcf-4866ba275778",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN839EB6",
+    "amount": 954.21,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T18:35:57.105280",
+    "customer_id": "user_bruce71",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "142.111.125.81",
+      "user_agent": "Opera/8.97.(Windows CE; se-NO) Presto/2.9.185 Version/10.00",
+      "device_fingerprint_id": "f8507b7f-feb9-4388-88c3-280c5467cd0c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0DB3B4",
+    "amount": 745.25,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T02:00:57.105333",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "62.19.248.29",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows 98; Trident/5.0)",
+      "device_fingerprint_id": "6c7b5ad9-7dfc-4bf0-b886-0e304524bb9c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4C8518",
+    "amount": 196.86,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T04:15:57.105364",
+    "customer_id": "user_samantha08",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "109.183.227.106",
+      "user_agent": "Mozilla/5.0 (Windows 98; Win 9x 4.90) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/25.0.888.0 Safari/536.2",
+      "device_fingerprint_id": "e3a21da3-460f-4c6c-b987-0b7e2a4b7c4c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNBA7035",
+    "amount": 467.3,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T17:49:57.105446",
+    "customer_id": "user_dmiles",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "212.150.192.108",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_6) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/34.0.882.0 Safari/533.2",
+      "device_fingerprint_id": "d6a064fc-e636-432b-b59f-e740fe95327c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3F0C19",
+    "amount": 2033.81,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T18:51:57.105526",
+    "customer_id": "user_hdickerson",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "49.169.58.179",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.31.6 (KHTML, like Gecko) Version/5.0.3 Safari/531.31.6",
+      "device_fingerprint_id": "abe8771a-4838-4254-839a-3a806405be6a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNCE58AE",
+    "amount": 1806.42,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T00:34:57.105608",
+    "customer_id": "user_odomkara",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "24.82.156.248",
+      "user_agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_12_1; rv:1.9.5.20) Gecko/5547-01-23 05:53:19 Firefox/6.0",
+      "device_fingerprint_id": "1f0ae09e-f188-463c-828f-4acf0a9aa8a0",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXND22C54",
+    "amount": 22144.52,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T09:21:57.105815",
+    "customer_id": "user_odomkara",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "188.153.249.215",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/534.1 (KHTML, like Gecko) CriOS/13.0.855.0 Mobile/54B479 Safari/534.1",
+      "device_fingerprint_id": "9eb1c6ba-a20c-49da-9c93-2d755b505ba8",
+      "device_status": "New Device",
+      "ip_risk_score": 70,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC833E0",
+    "amount": 279.69,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T09:17:57.106002",
+    "customer_id": "user_shannon72",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "107.8.232.255",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/62.0.848.0 Safari/534.0",
+      "device_fingerprint_id": "bbbaf846-8e40-4b57-ae38-ddd1daf03a91",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4352A2",
+    "amount": 1258.57,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T04:05:57.106083",
+    "customer_id": "user_megan91",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "6.24.30.205",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 4.0; Trident/3.0)",
+      "device_fingerprint_id": "5e273cfd-827e-497a-b2e1-c8e9a8143a36",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE347EA",
+    "amount": 5064.51,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T08:38:57.106116",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "187.25.243.72",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows 98; Win 9x 4.90) AppleWebKit/533.18.3 (KHTML, like Gecko) Version/5.0 Safari/533.18.3",
+      "device_fingerprint_id": "6be238aa-fa70-4858-9402-0170c7c58ced",
+      "device_status": "New Device",
+      "ip_risk_score": 71,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN56336C",
+    "amount": 2308.6,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T13:23:57.106286",
+    "customer_id": "user_mcmillanalexander",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "57.16.195.88",
+      "user_agent": "Mozilla/5.0 (Linux; Android 11) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/33.0.899.0 Safari/532.1",
+      "device_fingerprint_id": "68b41bbe-1476-4cd1-8a90-03d5be63bc5b",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN5A9F80",
+    "amount": 322.71,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T19:27:57.106375",
+    "customer_id": "user_ellismichael",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "141.189.213.32",
+      "user_agent": "Mozilla/5.0 (Windows NT 5.0) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/19.0.892.0 Safari/535.1",
+      "device_fingerprint_id": "0321f985-f42a-47d7-8d90-fcfe262f6db7",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN81FD18",
+    "amount": 2090.08,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T03:11:57.106456",
+    "customer_id": "user_shannon72",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "107.8.232.255",
+      "user_agent": "Opera/8.83.(X11; Linux i686; zh-HK) Presto/2.9.174 Version/10.00",
+      "device_fingerprint_id": "bbbaf846-8e40-4b57-ae38-ddd1daf03a91",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNCDB56C",
+    "amount": 1697.83,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T12:28:57.106519",
+    "customer_id": "user_turnershawn",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "49.232.192.39",
+      "user_agent": "Mozilla/5.0 (Linux; Android 2.2) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/58.0.867.0 Safari/531.1",
+      "device_fingerprint_id": "11e39633-c5a8-4f02-8ea5-ed5be5f1f1ea",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN6DD554",
+    "amount": 163.67,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T06:43:57.106597",
+    "customer_id": "user_christopher53",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "145.62.134.173",
+      "user_agent": "Opera/8.77.(X11; Linux x86_64; sl-SI) Presto/2.9.181 Version/12.00",
+      "device_fingerprint_id": "1e95136b-2c69-4ed8-b9b7-a5fa5566fe75",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB9E0EA",
+    "amount": 2069.3,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T09:42:57.106645",
+    "customer_id": "user_nmayer",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "203.213.126.126",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 2_2_1 like Mac OS X) AppleWebKit/534.1 (KHTML, like Gecko) CriOS/61.0.845.0 Mobile/81J288 Safari/534.1",
+      "device_fingerprint_id": "038419f5-5507-4fd0-89de-9368323e510e",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN1ED41E",
+    "amount": 2047.98,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T00:39:57.106737",
+    "customer_id": "user_odomkara",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "24.82.156.248",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 17_3 like Mac OS X) AppleWebKit/534.2 (KHTML, like Gecko) FxiOS/12.6h2428.0 Mobile/51D737 Safari/534.2",
+      "device_fingerprint_id": "1f0ae09e-f188-463c-828f-4acf0a9aa8a0",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNF29CFC",
+    "amount": 14958.66,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T05:31:57.106901",
+    "customer_id": "user_travislopez",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "165.144.162.207",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/535.1 (KHTML, like Gecko) CriOS/45.0.836.0 Mobile/56C078 Safari/535.1",
+      "device_fingerprint_id": "1081934f-0ecf-4737-ae04-2631effc6347",
+      "device_status": "New Device",
+      "ip_risk_score": 87,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN7689EF",
+    "amount": 2016.23,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T22:15:57.107085",
+    "customer_id": "user_melaniemiles",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "188.213.125.169",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 5.01; Trident/5.1)",
+      "device_fingerprint_id": "bf9454e2-f7d9-482d-8f02-3e6a63752495",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0571D1",
+    "amount": 2264.02,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T21:31:57.107121",
+    "customer_id": "user_hooperjustin",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "74.155.184.88",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 3_2 like Mac OS X; yue-HK) AppleWebKit/531.26.6 (KHTML, like Gecko) Version/4.0.5 Mobile/8B119 Safari/6531.26.6",
+      "device_fingerprint_id": "206d314b-466f-4370-bffa-48f006bdd4e9",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN75B5F1",
+    "amount": 9410.07,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T23:50:57.107181",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "133.28.250.161",
+      "user_agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.0 (KHTML, like Gecko) Chrome/52.0.871.0 Safari/536.0",
+      "device_fingerprint_id": "03739d55-6cd7-43e0-9e49-2f015cc7624a",
+      "device_status": "New Device",
+      "ip_risk_score": 82,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN47EA6D",
+    "amount": 20678.24,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T07:32:57.107357",
+    "customer_id": "user_qalexander",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "97.64.201.124",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 3_2 like Mac OS X; unm-US) AppleWebKit/531.14.3 (KHTML, like Gecko) Version/3.0.5 Mobile/8B112 Safari/6531.14.3",
+      "device_fingerprint_id": "2aa0519b-284b-4a05-9b26-d2267ee4bcdd",
+      "device_status": "New Device",
+      "ip_risk_score": 91,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN90848B",
+    "amount": 16926.93,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T20:59:57.107507",
+    "customer_id": "user_qalexander",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "33.222.134.200",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 11.0; Trident/4.0)",
+      "device_fingerprint_id": "16a8c7d7-17ba-4416-a4af-fd22679937f2",
+      "device_status": "New Device",
+      "ip_risk_score": 100,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN7E35C6",
+    "amount": 2073.05,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T03:08:57.107631",
+    "customer_id": "user_karen62",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "42.4.197.186",
+      "user_agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/56.0.845.0 Safari/533.1",
+      "device_fingerprint_id": "be65d58e-ec07-49b6-9afe-87bb1435545f",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN1DD743",
+    "amount": 1241.03,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T00:53:57.107718",
+    "customer_id": "user_gallagherchristopher",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "124.24.181.207",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 9_3_6 like Mac OS X) AppleWebKit/533.1 (KHTML, like Gecko) FxiOS/13.9f6498.0 Mobile/35Z043 Safari/533.1",
+      "device_fingerprint_id": "b4ae04e6-95a4-4838-9a72-cbf1d74ef63c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXND91C03",
+    "amount": 2188.3,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T18:24:57.107881",
+    "customer_id": "user_christinaherring",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "149.234.155.201",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; pt-BR) AppleWebKit/532.30.6 (KHTML, like Gecko) Version/3.0.5 Mobile/8B112 Safari/6532.30.6",
+      "device_fingerprint_id": "7f818472-aa06-4b49-8e4e-23183caba709",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4076C7",
+    "amount": 1863.99,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T07:33:57.107943",
+    "customer_id": "user_brucelinda",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "102.208.115.33",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_4) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/41.0.820.0 Safari/531.0",
+      "device_fingerprint_id": "b9b6eed1-aaa4-42b8-adfd-2ea0d1178bf9",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN8B3F1D",
+    "amount": 1151.94,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T20:24:57.108018",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "44.17.39.97",
+      "user_agent": "Opera/8.61.(X11; Linux i686; fo-FO) Presto/2.9.165 Version/12.00",
+      "device_fingerprint_id": "f5e37ad3-da1a-4f42-827d-acabca119617",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNFE4636",
+    "amount": 8898.89,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T20:23:57.108059",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "174.154.148.65",
+      "user_agent": "Opera/9.72.(Windows NT 5.2; niu-NZ) Presto/2.9.167 Version/11.00",
+      "device_fingerprint_id": "9c22f6bc-c938-4ef7-a471-8cf3faf2bf29",
+      "device_status": "New Device",
+      "ip_risk_score": 97,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNF9AE4F",
+    "amount": 1261.2,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T09:45:57.108193",
+    "customer_id": "user_derekbarber",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "123.60.10.183",
+      "user_agent": "Opera/9.59.(Windows NT 4.0; kok-IN) Presto/2.9.185 Version/12.00",
+      "device_fingerprint_id": "35295398-88a1-4556-9c14-ffdda4cadb76",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0974FB",
+    "amount": 1804.01,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T21:03:57.108234",
+    "customer_id": "user_agibson",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "53.150.118.7",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 4.0) AppleWebKit/535.11.2 (KHTML, like Gecko) Version/4.1 Safari/535.11.2",
+      "device_fingerprint_id": "199561ea-0f46-4f5e-b981-b6867c504412",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNFFCBBB",
+    "amount": 1802.35,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T22:17:57.108292",
+    "customer_id": "user_timothyayers",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "173.106.237.53",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_8_2) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/60.0.892.0 Safari/535.1",
+      "device_fingerprint_id": "6f621d84-272d-401c-85ee-a62f9fc029e8",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0FB9D6",
+    "amount": 1616.85,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T08:17:57.108372",
+    "customer_id": "user_drewolson",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "189.224.211.201",
+      "user_agent": "Opera/9.29.(X11; Linux i686; el-GR) Presto/2.9.187 Version/11.00",
+      "device_fingerprint_id": "19f07724-934b-42d5-b42d-e9caec34474e",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN5DE75C",
+    "amount": 1649.93,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T23:51:57.108411",
+    "customer_id": "user_chris57",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "168.251.74.114",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows CE; Trident/4.0)",
+      "device_fingerprint_id": "16a16da5-a050-4bb4-9f9e-b3a001fff860",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNAD86C5",
+    "amount": 1884.52,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T17:26:57.108445",
+    "customer_id": "user_wilsonmary",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "93.30.38.198",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.7.20) Gecko/8370-04-26 02:38:09 Firefox/3.6.15",
+      "device_fingerprint_id": "d1384982-61f2-47c3-a518-c768692621d5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNBBFFAD",
+    "amount": 888.62,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T05:34:57.108605",
+    "customer_id": "user_christopher53",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "145.62.134.173",
+      "user_agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/19.0.813.0 Safari/535.2",
+      "device_fingerprint_id": "1e95136b-2c69-4ed8-b9b7-a5fa5566fe75",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4385D2",
+    "amount": 2419.16,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T11:23:57.108686",
+    "customer_id": "user_daniel88",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "214.132.7.5",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows 98; Trident/4.0)",
+      "device_fingerprint_id": "5f0a3c7f-f61b-436d-988a-61600a85be96",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC74837",
+    "amount": 124.56,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T20:26:57.108733",
+    "customer_id": "user_christinaherring",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "93.23.168.238",
+      "user_agent": "Opera/8.88.(Windows NT 10.0; lt-LT) Presto/2.9.163 Version/10.00",
+      "device_fingerprint_id": "7f818472-aa06-4b49-8e4e-23183caba709",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN89F53C",
+    "amount": 146.46,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T16:07:57.108777",
+    "customer_id": "user_ojones",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "188.249.155.220",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/28.0.825.0 Safari/532.2",
+      "device_fingerprint_id": "112edf64-3dd6-4841-bb0c-167392084c7a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN9B8F70",
+    "amount": 777.53,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T08:38:57.108860",
+    "customer_id": "user_hooperjustin",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "74.155.184.88",
+      "user_agent": "Opera/8.84.(Windows 95; ga-IE) Presto/2.9.175 Version/12.00",
+      "device_fingerprint_id": "206d314b-466f-4370-bffa-48f006bdd4e9",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB1110C",
+    "amount": 1976.24,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T00:04:57.108901",
+    "customer_id": "user_drewolson",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "189.224.211.201",
+      "user_agent": "Mozilla/5.0 (Android 4.3; Mobile; rv:25.0) Gecko/25.0 Firefox/25.0",
+      "device_fingerprint_id": "f6882583-937b-4048-a877-41f4a90f9fbb",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2EC558",
+    "amount": 5740.95,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T05:16:57.109057",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "180.38.71.113",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 3_2_2 like Mac OS X) AppleWebKit/534.2 (KHTML, like Gecko) CriOS/22.0.833.0 Mobile/08N542 Safari/534.2",
+      "device_fingerprint_id": "143b2bde-efc1-4414-9472-9765652f3dac",
+      "device_status": "New Device",
+      "ip_risk_score": 97,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN3A64FA",
+    "amount": 1080.23,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T22:29:57.109242",
+    "customer_id": "user_timothyayers",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "173.106.237.53",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 10_3_4 like Mac OS X) AppleWebKit/532.1 (KHTML, like Gecko) FxiOS/9.1a4424.0 Mobile/43R742 Safari/532.1",
+      "device_fingerprint_id": "6f621d84-272d-401c-85ee-a62f9fc029e8",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN416C9B",
+    "amount": 13193.36,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T04:20:57.109400",
+    "customer_id": "user_travislopez",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "4.141.138.72",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1 rv:2.0; iw-IL) AppleWebKit/532.17.4 (KHTML, like Gecko) Version/4.0.4 Safari/532.17.4",
+      "device_fingerprint_id": "cdb1f4c5-37e0-4c5e-8205-5d9459fbd8f8",
+      "device_status": "New Device",
+      "ip_risk_score": 93,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3E097D",
+    "amount": 1072.74,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T01:38:57.109564",
+    "customer_id": "user_cassandra93",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "168.203.213.126",
+      "user_agent": "Mozilla/5.0 (Windows NT 4.0) AppleWebKit/536.0 (KHTML, like Gecko) Chrome/19.0.874.0 Safari/536.0",
+      "device_fingerprint_id": "a0a6999c-1ab2-40dd-bfcf-4866ba275778",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN811A6A",
+    "amount": 884.41,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T11:17:57.109646",
+    "customer_id": "user_christinaherring",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "93.23.168.238",
+      "user_agent": "Opera/9.19.(X11; Linux i686; th-TH) Presto/2.9.164 Version/12.00",
+      "device_fingerprint_id": "7f818472-aa06-4b49-8e4e-23183caba709",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN37A1DB",
+    "amount": 8190.89,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T04:44:57.109685",
+    "customer_id": "user_megan91",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "120.193.152.213",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/29.0.875.0 Safari/532.2",
+      "device_fingerprint_id": "07f984e9-3c0d-4c15-92b0-65af739d5380",
+      "device_status": "New Device",
+      "ip_risk_score": 79,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN9899D2",
+    "amount": 2076.66,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T22:10:57.109863",
+    "customer_id": "user_kimberlydavis",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "75.241.73.110",
+      "user_agent": "Opera/8.94.(X11; Linux x86_64; uk-UA) Presto/2.9.165 Version/11.00",
+      "device_fingerprint_id": "1dac0d56-c913-4e2d-9409-e50edf3a2402",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN63681E",
+    "amount": 1700.31,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T11:23:57.109906",
+    "customer_id": "user_anthony05",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "31.131.71.124",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 11.0; Trident/4.1)",
+      "device_fingerprint_id": "74e49bab-32b6-40a2-ac0b-ccd1af6a08b5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN19CBAF",
+    "amount": 23180.02,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T01:04:57.109935",
+    "customer_id": "user_hdickerson",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "59.31.191.124",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 17_3 like Mac OS X) AppleWebKit/534.0 (KHTML, like Gecko) FxiOS/17.4r2660.0 Mobile/47J718 Safari/534.0",
+      "device_fingerprint_id": "3ace8837-3c20-4e1e-a683-c0b2ca446ba6",
+      "device_status": "New Device",
+      "ip_risk_score": 71,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN1059EC",
+    "amount": 1021.27,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T13:50:57.110182",
+    "customer_id": "user_ojones",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "62.156.209.242",
+      "user_agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_6; rv:1.9.2.20) Gecko/6204-04-13 03:27:59 Firefox/8.0",
+      "device_fingerprint_id": "761efede-3572-4b00-817c-0ed3c18a5931",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNA96904",
+    "amount": 1615.8,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T09:33:57.110335",
+    "customer_id": "user_anthony05",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "31.131.71.124",
+      "user_agent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/61.0.855.0 Safari/532.2",
+      "device_fingerprint_id": "74e49bab-32b6-40a2-ac0b-ccd1af6a08b5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN494586",
+    "amount": 1656.17,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T20:33:57.110409",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "62.19.248.29",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 5.0; Windows CE; Trident/3.1)",
+      "device_fingerprint_id": "070411e7-6968-43e4-8016-750a5e2ca71b",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0D2943",
+    "amount": 1738.98,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T09:25:57.110437",
+    "customer_id": "user_amiller",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "85.47.28.249",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows 98; Win 9x 4.90; Trident/5.0)",
+      "device_fingerprint_id": "97059587-bded-4b42-8753-70aaa9cafdef",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4ACA3A",
+    "amount": 1547.02,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T09:19:57.110468",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "44.17.39.97",
+      "user_agent": "Opera/8.61.(X11; Linux x86_64; mt-MT) Presto/2.9.161 Version/11.00",
+      "device_fingerprint_id": "711698fb-e07b-4a3a-8269-0e4d55fd6dfb",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE8E431",
+    "amount": 378.91,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T14:29:57.110505",
+    "customer_id": "user_jennifer40",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "79.231.232.208",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_7 like Mac OS X) AppleWebKit/535.1 (KHTML, like Gecko) CriOS/28.0.805.0 Mobile/87V870 Safari/535.1",
+      "device_fingerprint_id": "46e228b0-a52b-4ee1-b71f-2fb729fbdc94",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN02B481",
+    "amount": 1136.15,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T01:40:57.110573",
+    "customer_id": "user_anthony21",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "1.44.152.28",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.0; Trident/4.1)",
+      "device_fingerprint_id": "f6060493-fd41-4038-9161-c411bdf8a023",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3A8323",
+    "amount": 16768.57,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T12:54:57.110601",
+    "customer_id": "user_christopher53",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "23.31.182.244",
+      "user_agent": "Mozilla/5.0 (Windows NT 5.01; ht-HT; rv:1.9.2.20) Gecko/7543-06-22 07:56:40 Firefox/5.0",
+      "device_fingerprint_id": "6ffbd7b0-afc2-41ae-b2f5-618c42b64f3e",
+      "device_status": "New Device",
+      "ip_risk_score": 72,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN085B2C",
+    "amount": 1056.19,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T20:18:57.110855",
+    "customer_id": "user_melaniemiles",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "86.200.225.77",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; byn-ER) AppleWebKit/532.4.1 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6532.4.1",
+      "device_fingerprint_id": "bf9454e2-f7d9-482d-8f02-3e6a63752495",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNABE6DA",
+    "amount": 17735.1,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T02:55:57.110915",
+    "customer_id": "user_drewolson",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "16.163.47.21",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 5.01; Trident/4.0)",
+      "device_fingerprint_id": "ea252487-3244-408c-82e9-7a866e11c4d1",
+      "device_status": "New Device",
+      "ip_risk_score": 72,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNDABF33",
+    "amount": 1561.38,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T21:52:57.111036",
+    "customer_id": "user_benjaminbrenda",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "30.215.119.172",
+      "user_agent": "Opera/9.69.(Windows 95; da-DK) Presto/2.9.189 Version/10.00",
+      "device_fingerprint_id": "83e2c325-09c7-4c59-9405-41d069f89420",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB63E41",
+    "amount": 278.43,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T21:51:57.111075",
+    "customer_id": "user_danielseric",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "103.254.222.185",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1) AppleWebKit/534.25.7 (KHTML, like Gecko) Version/5.0.3 Safari/534.25.7",
+      "device_fingerprint_id": "939ba495-4988-48d3-8ec5-41cbb6faefb2",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNEBAEC2",
+    "amount": 2104.4,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T20:14:57.111131",
+    "customer_id": "user_danielseric",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "103.254.222.185",
+      "user_agent": "Opera/9.39.(X11; Linux x86_64; nb-NO) Presto/2.9.170 Version/11.00",
+      "device_fingerprint_id": "939ba495-4988-48d3-8ec5-41cbb6faefb2",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXND53EE6",
+    "amount": 980.57,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T22:59:57.111171",
+    "customer_id": "user_bruce71",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "125.171.206.83",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_0; rv:1.9.3.20) Gecko/3787-04-16 20:25:25 Firefox/3.8",
+      "device_fingerprint_id": "f8507b7f-feb9-4388-88c3-280c5467cd0c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNBD5692",
+    "amount": 2307.18,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T11:16:57.111325",
+    "customer_id": "user_daniel88",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "214.132.7.5",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 6.1; Trident/5.0)",
+      "device_fingerprint_id": "394e0468-42b7-44d4-a87f-380138d021e4",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN362D7E",
+    "amount": 2239.38,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T11:54:57.111356",
+    "customer_id": "user_sandra10",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "211.246.93.131",
+      "user_agent": "Mozilla/5.0 (Windows NT 6.0; tn-ZA; rv:1.9.0.20) Gecko/3085-02-19 20:08:38 Firefox/13.0",
+      "device_fingerprint_id": "caf504a3-fdf3-4408-b5b7-734691cf46a5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB47BA0",
+    "amount": 870.73,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T12:02:57.111498",
+    "customer_id": "user_anthony05",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "31.131.71.124",
+      "user_agent": "Opera/8.72.(Windows NT 6.0; se-NO) Presto/2.9.178 Version/12.00",
+      "device_fingerprint_id": "74e49bab-32b6-40a2-ac0b-ccd1af6a08b5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNDAF837",
+    "amount": 918.94,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T21:35:57.111539",
+    "customer_id": "user_sandragordon",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "91.194.186.180",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows CE; Trident/4.1)",
+      "device_fingerprint_id": "52a55bf1-852f-4cc8-bb2f-6493c1bb8559",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNF3B010",
+    "amount": 1415.72,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T20:37:57.111567",
+    "customer_id": "user_bruce71",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "142.111.125.81",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_8_8; rv:1.9.3.20) Gecko/8932-12-19 11:13:35 Firefox/3.6.17",
+      "device_fingerprint_id": "f8507b7f-feb9-4388-88c3-280c5467cd0c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3B7B0D",
+    "amount": 138.4,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T17:07:57.111709",
+    "customer_id": "user_qalexander",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "155.87.38.2",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/3.1)",
+      "device_fingerprint_id": "7e164bfa-2432-46e1-956e-18969fc21ed2",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB4A049",
+    "amount": 582.15,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T03:13:57.111737",
+    "customer_id": "user_hooperjustin",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "74.155.184.88",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 5.0; Windows 98; Trident/3.0)",
+      "device_fingerprint_id": "206d314b-466f-4370-bffa-48f006bdd4e9",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN95783B",
+    "amount": 1800.87,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T02:36:57.111765",
+    "customer_id": "user_nmayer",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "203.213.126.126",
+      "user_agent": "Mozilla/5.0 (Android 4.1; Mobile; rv:45.0) Gecko/45.0 Firefox/45.0",
+      "device_fingerprint_id": "038419f5-5507-4fd0-89de-9368323e510e",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN6409BA",
+    "amount": 1717.64,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T15:49:57.111902",
+    "customer_id": "user_christopher53",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "145.62.134.173",
+      "user_agent": "Opera/9.65.(Windows 98; hne-IN) Presto/2.9.171 Version/10.00",
+      "device_fingerprint_id": "1e95136b-2c69-4ed8-b9b7-a5fa5566fe75",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXND7158F",
+    "amount": 1736.19,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T21:04:57.111942",
+    "customer_id": "user_anthony21",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "1.44.152.28",
+      "user_agent": "Opera/9.72.(Windows NT 5.0; is-IS) Presto/2.9.165 Version/12.00",
+      "device_fingerprint_id": "b0478460-1477-43b9-b0b8-843e9bfdf66a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3A0413",
+    "amount": 2234.8,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T05:17:57.111976",
+    "customer_id": "user_nmayer",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "203.213.126.126",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Trident/4.1)",
+      "device_fingerprint_id": "038419f5-5507-4fd0-89de-9368323e510e",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN7301C3",
+    "amount": 809.07,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T07:07:57.112003",
+    "customer_id": "user_rhonda36",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "26.39.143.39",
+      "user_agent": "Mozilla/5.0 (Android 4.1.2; Mobile; rv:17.0) Gecko/17.0 Firefox/17.0",
+      "device_fingerprint_id": "fe2a2458-1ebe-4505-b40f-6d4756dacb76",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN577A09",
+    "amount": 169.9,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T15:39:57.112141",
+    "customer_id": "user_rhonda36",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "16.42.203.71",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 11.0) AppleWebKit/534.9.5 (KHTML, like Gecko) Version/5.0.1 Safari/534.9.5",
+      "device_fingerprint_id": "f474a2e2-7521-4af8-a225-e4c116cae928",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2A438E",
+    "amount": 860.79,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T06:25:57.112196",
+    "customer_id": "user_anthony21",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "219.66.204.96",
+      "user_agent": "Mozilla/5.0 (Linux; Android 3.2.4) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/37.0.871.0 Safari/532.0",
+      "device_fingerprint_id": "b0478460-1477-43b9-b0b8-843e9bfdf66a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNF19E2F",
+    "amount": 17747.47,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T23:39:57.112270",
+    "customer_id": "user_sarahsweeney",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "72.122.106.39",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_0 rv:4.0; sid-ET) AppleWebKit/531.18.5 (KHTML, like Gecko) Version/4.1 Safari/531.18.5",
+      "device_fingerprint_id": "0899a177-cd0b-48d7-bb2c-2497be3cf0c6",
+      "device_status": "New Device",
+      "ip_risk_score": 81,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4771AA",
+    "amount": 2238.88,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T22:16:57.112403",
+    "customer_id": "user_brucelinda",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "102.208.115.33",
+      "user_agent": "Opera/9.46.(Windows 98; li-NL) Presto/2.9.167 Version/12.00",
+      "device_fingerprint_id": "c9179d39-9b0d-40f0-8563-9c0b33e9b7b7",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC55D80",
+    "amount": 2155.8,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T20:58:57.112437",
+    "customer_id": "user_sarahsweeney",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "125.80.115.42",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows 98; Win 9x 4.90) AppleWebKit/535.37.1 (KHTML, like Gecko) Version/4.0.5 Safari/535.37.1",
+      "device_fingerprint_id": "57d7ab52-78bf-470e-bdab-5fba45c8e20b",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNF891CF",
+    "amount": 2330.4,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T09:32:57.112487",
+    "customer_id": "user_drewolson",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "189.224.211.201",
+      "user_agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_8_6; rv:1.9.4.20) Gecko/3171-02-24 23:16:07 Firefox/3.6.20",
+      "device_fingerprint_id": "19f07724-934b-42d5-b42d-e9caec34474e",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN43CB34",
+    "amount": 394.59,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T03:39:57.112619",
+    "customer_id": "user_anthony05",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "31.131.71.124",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_0 rv:5.0; tt-RU) AppleWebKit/533.26.3 (KHTML, like Gecko) Version/4.0 Safari/533.26.3",
+      "device_fingerprint_id": "74e49bab-32b6-40a2-ac0b-ccd1af6a08b5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN368230",
+    "amount": 520.5,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T01:39:57.112694",
+    "customer_id": "user_benjaminbrenda",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "30.215.119.172",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_11_7) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/43.0.829.0 Safari/534.2",
+      "device_fingerprint_id": "020516ef-11ba-4228-95bf-aeded946c810",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNEC283E",
+    "amount": 1803.64,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T12:48:57.112778",
+    "customer_id": "user_qfuller",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "65.45.59.139",
+      "user_agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/54.0.828.0 Safari/535.0",
+      "device_fingerprint_id": "4a1c5125-fc09-4abc-85a5-08884d8ba802",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0618F0",
+    "amount": 792.24,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T13:00:57.112850",
+    "customer_id": "user_hooperjustin",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "74.155.184.88",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_11_0) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/53.0.872.0 Safari/534.2",
+      "device_fingerprint_id": "206d314b-466f-4370-bffa-48f006bdd4e9",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN074E9C",
+    "amount": 2241.18,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T04:21:57.112915",
+    "customer_id": "user_benjaminbrenda",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "102.198.235.142",
+      "user_agent": "Opera/8.92.(X11; Linux x86_64; pt-BR) Presto/2.9.183 Version/11.00",
+      "device_fingerprint_id": "020516ef-11ba-4228-95bf-aeded946c810",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN43D707",
+    "amount": 588.25,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T20:48:57.112954",
+    "customer_id": "user_cindy92",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "159.142.220.177",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 12_5_7 like Mac OS X) AppleWebKit/533.0 (KHTML, like Gecko) CriOS/61.0.817.0 Mobile/26F159 Safari/533.0",
+      "device_fingerprint_id": "14069157-418b-41bf-a965-8bafa7d250ec",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE1B82C",
+    "amount": 734.75,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T09:28:57.113022",
+    "customer_id": "user_samantha08",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "109.183.227.106",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_8; rv:1.9.5.20) Gecko/4823-05-31 06:29:55 Firefox/3.6.16",
+      "device_fingerprint_id": "e3a21da3-460f-4c6c-b987-0b7e2a4b7c4c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNEB58DE",
+    "amount": 1427.58,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T04:36:57.113197",
+    "customer_id": "user_moorejeremy",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "68.238.28.115",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 4.0) AppleWebKit/532.3.2 (KHTML, like Gecko) Version/5.0.4 Safari/532.3.2",
+      "device_fingerprint_id": "66b84db5-5d7f-4e6d-8bee-d7357ab4cb36",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN6D71BD",
+    "amount": 1644.65,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T04:08:57.113252",
+    "customer_id": "user_samantha08",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "109.183.227.106",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows 98; Win 9x 4.90; Trident/5.1)",
+      "device_fingerprint_id": "6007b268-f211-4de8-b131-2fbd33817520",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN041430",
+    "amount": 1258.31,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T18:26:57.113280",
+    "customer_id": "user_samantha08",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "85.141.112.35",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_5) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/61.0.858.0 Safari/531.0",
+      "device_fingerprint_id": "e3a21da3-460f-4c6c-b987-0b7e2a4b7c4c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC1D41C",
+    "amount": 1506.57,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T09:32:57.113349",
+    "customer_id": "user_rhonda36",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "26.39.143.39",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 4_2_1 like Mac OS X) AppleWebKit/533.1 (KHTML, like Gecko) FxiOS/11.1r6688.0 Mobile/36V466 Safari/533.1",
+      "device_fingerprint_id": "f474a2e2-7521-4af8-a225-e4c116cae928",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN59182D",
+    "amount": 318.5,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T23:43:57.113489",
+    "customer_id": "user_bruce71",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "125.171.206.83",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.0; Trident/4.1)",
+      "device_fingerprint_id": "2bac179b-645c-4953-b101-0d32333d71d1",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4E7D9A",
+    "amount": 1046.4,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T08:27:57.113520",
+    "customer_id": "user_amiller",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "85.47.28.249",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_9_4; rv:1.9.4.20) Gecko/3025-06-23 17:19:57 Firefox/3.6.14",
+      "device_fingerprint_id": "97059587-bded-4b42-8753-70aaa9cafdef",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN16EF27",
+    "amount": 175.92,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T00:24:57.113653",
+    "customer_id": "user_dmiles",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "45.17.243.222",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows 95) AppleWebKit/531.28.5 (KHTML, like Gecko) Version/5.1 Safari/531.28.5",
+      "device_fingerprint_id": "d6a064fc-e636-432b-b59f-e740fe95327c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN254F5E",
+    "amount": 19281.95,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T02:53:57.113708",
+    "customer_id": "user_shannon72",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "152.211.149.171",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 5.0; Trident/5.0)",
+      "device_fingerprint_id": "27742958-7b2c-4450-8ffb-6b9153ebfe79",
+      "device_status": "New Device",
+      "ip_risk_score": 95,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN07FE0E",
+    "amount": 1214.96,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T01:20:57.113830",
+    "customer_id": "user_christopher53",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "145.62.134.173",
+      "user_agent": "Opera/8.87.(Windows NT 5.1; az-AZ) Presto/2.9.185 Version/10.00",
+      "device_fingerprint_id": "1e95136b-2c69-4ed8-b9b7-a5fa5566fe75",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNBFDE7A",
+    "amount": 711.3,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T17:14:57.113867",
+    "customer_id": "user_mcmillanalexander",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "57.16.195.88",
+      "user_agent": "Mozilla/5.0 (Windows CE) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/20.0.855.0 Safari/534.1",
+      "device_fingerprint_id": "68b41bbe-1476-4cd1-8a90-03d5be63bc5b",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN5A0C96",
+    "amount": 283.38,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T16:37:57.113934",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "44.17.39.97",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_7_0) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/31.0.804.0 Safari/534.0",
+      "device_fingerprint_id": "878177e7-4727-42c3-865a-ae5a566c6444",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN419051",
+    "amount": 214.36,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T11:53:57.113998",
+    "customer_id": "user_karen62",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "42.4.197.186",
+      "user_agent": "Mozilla/5.0 (Android 4.3.1; Mobile; rv:55.0) Gecko/55.0 Firefox/55.0",
+      "device_fingerprint_id": "f029c915-025a-4db6-b77f-a4fa58748e23",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNCA6D46",
+    "amount": 1056.27,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T15:14:57.114127",
+    "customer_id": "user_kaiserjustin",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "24.26.193.155",
+      "user_agent": "Opera/8.10.(Windows NT 5.0; mhr-RU) Presto/2.9.178 Version/12.00",
+      "device_fingerprint_id": "9a6fce66-d47c-47e2-a91d-14f63d6bcf4b",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN551DA6",
+    "amount": 1002.29,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T08:12:57.114167",
+    "customer_id": "user_hfernandez",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "160.254.128.96",
+      "user_agent": "Mozilla/5.0 (Windows 95; is-IS; rv:1.9.0.20) Gecko/7742-09-10 19:43:52 Firefox/3.6.7",
+      "device_fingerprint_id": "bd851133-5d39-4140-8444-ffafd68e1e72",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC8DD59",
+    "amount": 2338.96,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T11:30:57.114292",
+    "customer_id": "user_karen62",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "42.4.197.186",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 5.01) AppleWebKit/531.13.5 (KHTML, like Gecko) Version/4.0.3 Safari/531.13.5",
+      "device_fingerprint_id": "f029c915-025a-4db6-b77f-a4fa58748e23",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN480A18",
+    "amount": 18264.1,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T13:55:57.114343",
+    "customer_id": "user_danielseric",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "176.229.74.77",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/3.0)",
+      "device_fingerprint_id": "f68e4ab0-9cc9-4518-92b6-3343acf46b6c",
+      "device_status": "New Device",
+      "ip_risk_score": 80,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN4B02BC",
+    "amount": 1496.35,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T19:14:57.114454",
+    "customer_id": "user_anthony21",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "1.44.152.28",
+      "user_agent": "Mozilla/5.0 (Linux; Android 2.2.2) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/50.0.878.0 Safari/531.2",
+      "device_fingerprint_id": "b0478460-1477-43b9-b0b8-843e9bfdf66a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC7B9BA",
+    "amount": 1207.62,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T13:10:57.114523",
+    "customer_id": "user_bruce71",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "142.111.125.81",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.1 (KHTML, like Gecko) Chrome/14.0.803.0 Safari/536.1",
+      "device_fingerprint_id": "2bac179b-645c-4953-b101-0d32333d71d1",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN763450",
+    "amount": 411.42,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T10:18:57.114590",
+    "customer_id": "user_hfernandez",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "160.254.128.96",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/28.0.835.0 Safari/534.0",
+      "device_fingerprint_id": "bd851133-5d39-4140-8444-ffafd68e1e72",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3FEF6A",
+    "amount": 1443.39,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T03:59:57.114654",
+    "customer_id": "user_rhonda36",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "26.39.143.39",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_0; rv:1.9.2.20) Gecko/8800-09-09 10:02:40 Firefox/3.8",
+      "device_fingerprint_id": "fe2a2458-1ebe-4505-b40f-6d4756dacb76",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN649100",
+    "amount": 994.11,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T11:53:57.114802",
+    "customer_id": "user_hooperjustin",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "74.155.184.88",
+      "user_agent": "Opera/8.62.(Windows NT 6.1; nl-AW) Presto/2.9.178 Version/12.00",
+      "device_fingerprint_id": "206d314b-466f-4370-bffa-48f006bdd4e9",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNFDACDC",
+    "amount": 2132.36,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T02:00:57.114845",
+    "customer_id": "user_samantha08",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "109.183.227.106",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 17_2_1 like Mac OS X) AppleWebKit/536.2 (KHTML, like Gecko) CriOS/37.0.845.0 Mobile/98N918 Safari/536.2",
+      "device_fingerprint_id": "e3a21da3-460f-4c6c-b987-0b7e2a4b7c4c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNA23274",
+    "amount": 12431.16,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T18:49:57.114922",
+    "customer_id": "user_kimberlydavis",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "138.190.219.127",
+      "user_agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_0; rv:1.9.4.20) Gecko/9926-04-09 09:48:19 Firefox/9.0",
+      "device_fingerprint_id": "e43467fa-54bd-4f5c-b804-455de968984a",
+      "device_status": "New Device",
+      "ip_risk_score": 75,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN9EE9C1",
+    "amount": 1699.59,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T01:02:57.115160",
+    "customer_id": "user_qalexander",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "155.87.38.2",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows 98; Win 9x 4.90; Trident/3.1)",
+      "device_fingerprint_id": "7e164bfa-2432-46e1-956e-18969fc21ed2",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNACDD1D",
+    "amount": 166.94,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T09:46:57.115191",
+    "customer_id": "user_daniel88",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "214.132.7.5",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.01; Trident/3.0)",
+      "device_fingerprint_id": "5f0a3c7f-f61b-436d-988a-61600a85be96",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE3C702",
+    "amount": 2165.43,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T08:27:57.115215",
+    "customer_id": "user_christopher53",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "145.62.134.173",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 3_2 like Mac OS X; tr-TR) AppleWebKit/531.39.2 (KHTML, like Gecko) Version/3.0.5 Mobile/8B114 Safari/6531.39.2",
+      "device_fingerprint_id": "1e95136b-2c69-4ed8-b9b7-a5fa5566fe75",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2D6977",
+    "amount": 8204.03,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T07:06:57.115262",
+    "customer_id": "user_ellismichael",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "65.242.170.93",
+      "user_agent": "Mozilla/5.0 (Linux; Android 4.0) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/35.0.810.0 Safari/535.0",
+      "device_fingerprint_id": "646d12ec-0ac5-4fa3-bc72-dd3ba6ebe5db",
+      "device_status": "New Device",
+      "ip_risk_score": 90,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN6A0599",
+    "amount": 5055.06,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T13:44:57.115439",
+    "customer_id": "user_odomkara",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "55.152.143.119",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/536.1 (KHTML, like Gecko) Chrome/51.0.864.0 Safari/536.1",
+      "device_fingerprint_id": "8a44bde2-1d97-4ed9-b610-18d7025d85fe",
+      "device_status": "New Device",
+      "ip_risk_score": 71,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNE718B3",
+    "amount": 223.06,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T10:07:57.115648",
+    "customer_id": "user_dmiles",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "212.150.192.108",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; yue-HK) AppleWebKit/531.7.2 (KHTML, like Gecko) Version/4.0.5 Mobile/8B119 Safari/6531.7.2",
+      "device_fingerprint_id": "0bffa250-3fdc-41f0-a07e-8e4e31e14910",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN199691",
+    "amount": 1154.29,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T21:30:57.115774",
+    "customer_id": "user_wilsonmary",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "93.30.38.198",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows 98; Trident/4.0)",
+      "device_fingerprint_id": "b7e73232-7b58-4511-bf27-aa4d71bbfc70",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNDC7ED7",
+    "amount": 1674.96,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T05:50:57.115804",
+    "customer_id": "user_anthony05",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "31.131.71.124",
+      "user_agent": "Opera/9.25.(X11; Linux i686; am-ET) Presto/2.9.167 Version/12.00",
+      "device_fingerprint_id": "74e49bab-32b6-40a2-ac0b-ccd1af6a08b5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN7D4272",
+    "amount": 1420.81,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T05:04:57.115845",
+    "customer_id": "user_turnershawn",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "49.232.192.39",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 4.0; Trident/5.0)",
+      "device_fingerprint_id": "99215b22-0b92-421f-b243-4f2f7874e1ee",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN872631",
+    "amount": 1630.37,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T04:27:57.115871",
+    "customer_id": "user_melaniemiles",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "86.200.225.77",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows 98; Trident/3.1)",
+      "device_fingerprint_id": "bf9454e2-f7d9-482d-8f02-3e6a63752495",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN39D636",
+    "amount": 767.97,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T21:16:57.115899",
+    "customer_id": "user_christinaherring",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "149.234.155.201",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/5.0)",
+      "device_fingerprint_id": "7f818472-aa06-4b49-8e4e-23183caba709",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE9FACC",
+    "amount": 1562.86,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T16:46:57.115922",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "62.19.248.29",
+      "user_agent": "Opera/8.53.(Windows NT 5.0; eu-FR) Presto/2.9.170 Version/10.00",
+      "device_fingerprint_id": "0e79a0ae-2f50-438b-a5de-d80ca2c3b8d2",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC626E9",
+    "amount": 1000.99,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T09:06:57.115952",
+    "customer_id": "user_odomkara",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "115.172.71.223",
+      "user_agent": "Mozilla/5.0 (Linux; Android 4.0.4) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/23.0.886.0 Safari/533.1",
+      "device_fingerprint_id": "1f0ae09e-f188-463c-828f-4acf0a9aa8a0",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN34F8A2",
+    "amount": 370.71,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T19:14:57.116018",
+    "customer_id": "user_padams",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "39.110.98.43",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 12_4_8 like Mac OS X) AppleWebKit/533.2 (KHTML, like Gecko) FxiOS/18.2n5283.0 Mobile/88O568 Safari/533.2",
+      "device_fingerprint_id": "d627a498-736d-4235-ac41-3229b61b54fe",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN1E8EDE",
+    "amount": 1636.94,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T12:04:57.116157",
+    "customer_id": "user_hooperjustin",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "74.155.184.88",
+      "user_agent": "Opera/9.68.(Windows NT 10.0; ky-KG) Presto/2.9.184 Version/12.00",
+      "device_fingerprint_id": "206d314b-466f-4370-bffa-48f006bdd4e9",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN751AB8",
+    "amount": 1563.69,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T21:29:57.117147",
+    "customer_id": "user_dmiles",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "212.150.192.108",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 4.0; Trident/5.1)",
+      "device_fingerprint_id": "d6a064fc-e636-432b-b59f-e740fe95327c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3D1954",
+    "amount": 639.43,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T02:37:57.117243",
+    "customer_id": "user_gallagherchristopher",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "124.24.181.207",
+      "user_agent": "Opera/8.39.(Windows 98; Win 9x 4.90; byn-ER) Presto/2.9.181 Version/12.00",
+      "device_fingerprint_id": "b4ae04e6-95a4-4838-9a72-cbf1d74ef63c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN8C3080",
+    "amount": 215.63,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T15:05:57.117305",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "44.17.39.97",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; te-IN) AppleWebKit/534.20.6 (KHTML, like Gecko) Version/3.0.5 Mobile/8B117 Safari/6534.20.6",
+      "device_fingerprint_id": "711698fb-e07b-4a3a-8269-0e4d55fd6dfb",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXND63BF9",
+    "amount": 1192.86,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T21:34:57.117385",
+    "customer_id": "user_jennifer40",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "79.231.232.208",
+      "user_agent": "Opera/8.14.(Windows NT 5.0; raj-IN) Presto/2.9.160 Version/11.00",
+      "device_fingerprint_id": "46e228b0-a52b-4ee1-b71f-2fb729fbdc94",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN82E5BC",
+    "amount": 1423.14,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T09:08:57.117431",
+    "customer_id": "user_cindy92",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "159.142.220.177",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_1 rv:3.0; lzh-TW) AppleWebKit/532.34.5 (KHTML, like Gecko) Version/5.1 Safari/532.34.5",
+      "device_fingerprint_id": "95c7e93a-539e-49e7-b9ea-4aee43a5d883",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 1,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2E4FD5",
+    "amount": 662.63,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T06:58:57.117509",
+    "customer_id": "user_sandragordon",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "45.66.178.19",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_11_9 rv:6.0; ky-KG) AppleWebKit/531.8.4 (KHTML, like Gecko) Version/4.1 Safari/531.8.4",
+      "device_fingerprint_id": "52a55bf1-852f-4cc8-bb2f-6493c1bb8559",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4DF0D7",
+    "amount": 779.73,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T04:22:57.117574",
+    "customer_id": "user_moorejeremy",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "34.71.131.168",
+      "user_agent": "Mozilla/5.0 (Android 4.0.2; Mobile; rv:22.0) Gecko/22.0 Firefox/22.0",
+      "device_fingerprint_id": "66b84db5-5d7f-4e6d-8bee-d7357ab4cb36",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXND34968",
+    "amount": 414.73,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T17:28:57.117952",
+    "customer_id": "user_anthony21",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "219.66.204.96",
+      "user_agent": "Opera/8.16.(Windows NT 6.0; ce-RU) Presto/2.9.190 Version/12.00",
+      "device_fingerprint_id": "f6060493-fd41-4038-9161-c411bdf8a023",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2BD35E",
+    "amount": 2425.55,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T18:16:57.118035",
+    "customer_id": "user_wilsonmary",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "93.30.38.198",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3 rv:2.0; ml-IN) AppleWebKit/534.5.2 (KHTML, like Gecko) Version/5.1 Safari/534.5.2",
+      "device_fingerprint_id": "f515e651-5991-4e47-93d3-15da9dc6c016",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3D3BEC",
+    "amount": 1323.09,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T21:59:57.118085",
+    "customer_id": "user_travislopez",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "147.13.223.42",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows 95; Trident/5.1)",
+      "device_fingerprint_id": "711355b1-976c-4abc-af76-6931b4253294",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN83D8BD",
+    "amount": 1978.14,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T04:35:57.118109",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "62.19.248.29",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_0 like Mac OS X; yue-HK) AppleWebKit/531.9.5 (KHTML, like Gecko) Version/4.0.5 Mobile/8B114 Safari/6531.9.5",
+      "device_fingerprint_id": "6c7b5ad9-7dfc-4bf0-b886-0e304524bb9c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNCA5A57",
+    "amount": 14588.01,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T23:58:57.118158",
+    "customer_id": "user_ojones",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "134.149.161.249",
+      "user_agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/58.0.833.0 Safari/532.2",
+      "device_fingerprint_id": "46c3b1be-f59c-4e73-9ce3-9b17ef20bd58",
+      "device_status": "New Device",
+      "ip_risk_score": 73,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNCB4F90",
+    "amount": 21375.26,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T19:51:57.118357",
+    "customer_id": "user_cassandra93",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "153.83.30.18",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 10.0; Trident/4.0)",
+      "device_fingerprint_id": "7ff0b464-7603-4e40-afea-0a698cf8005e",
+      "device_status": "New Device",
+      "ip_risk_score": 70,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXND16EFA",
+    "amount": 17957.14,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T22:14:57.118456",
+    "customer_id": "user_odomkara",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "219.245.16.68",
+      "user_agent": "Mozilla/5.0 (Windows NT 4.0) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/29.0.896.0 Safari/532.0",
+      "device_fingerprint_id": "6feed16b-7ffb-45ef-8703-1e91f107ac51",
+      "device_status": "New Device",
+      "ip_risk_score": 98,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN7C6758",
+    "amount": 16383.36,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T13:24:57.118582",
+    "customer_id": "user_shannon72",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "222.252.140.238",
+      "user_agent": "Opera/8.50.(X11; Linux x86_64; bhb-IN) Presto/2.9.177 Version/12.00",
+      "device_fingerprint_id": "0943c089-8824-4908-b5cd-0f7721b95259",
+      "device_status": "New Device",
+      "ip_risk_score": 77,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN562654",
+    "amount": 388.54,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T09:27:57.118681",
+    "customer_id": "user_cindy92",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "159.142.220.177",
+      "user_agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/55.0.877.0 Safari/534.2",
+      "device_fingerprint_id": "14069157-418b-41bf-a965-8bafa7d250ec",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 9,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN86B208",
+    "amount": 442.51,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T04:30:57.118741",
+    "customer_id": "user_ojones",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "188.249.155.220",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/3.1)",
+      "device_fingerprint_id": "761efede-3572-4b00-817c-0ed3c18a5931",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN7D0BAA",
+    "amount": 22128.6,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T19:32:57.118764",
+    "customer_id": "user_dmiles",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "218.133.195.198",
+      "user_agent": "Mozilla/5.0 (Android 3.2.1; Mobile; rv:23.0) Gecko/23.0 Firefox/23.0",
+      "device_fingerprint_id": "dc112b7b-8491-4f3a-93da-a6dd77b8d0f1",
+      "device_status": "New Device",
+      "ip_risk_score": 77,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNABDBC0",
+    "amount": 10886.05,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T06:50:57.118957",
+    "customer_id": "user_cassandra93",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "59.246.64.113",
+      "user_agent": "Opera/8.59.(Windows NT 4.0; pap-AN) Presto/2.9.171 Version/11.00",
+      "device_fingerprint_id": "e23a326c-e643-4932-8b10-6194aa0d6606",
+      "device_status": "New Device",
+      "ip_risk_score": 97,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNFEFC1C",
+    "amount": 7913.1,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T18:38:57.119058",
+    "customer_id": "user_benjaminbrenda",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "203.119.28.228",
+      "user_agent": "Mozilla/5.0 (Windows NT 4.0; af-ZA; rv:1.9.2.20) Gecko/2801-12-27 08:49:52 Firefox/3.8",
+      "device_fingerprint_id": "c087123c-a3a6-4876-a722-ffa38ae98f67",
+      "device_status": "New Device",
+      "ip_risk_score": 100,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN7B440E",
+    "amount": 452.07,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T10:07:57.119241",
+    "customer_id": "user_karen62",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "42.4.197.186",
+      "user_agent": "Opera/8.51.(Windows NT 5.1; tt-RU) Presto/2.9.167 Version/11.00",
+      "device_fingerprint_id": "f029c915-025a-4db6-b77f-a4fa58748e23",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4A0117",
+    "amount": 1650.74,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T23:16:57.119274",
+    "customer_id": "user_timothyayers",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "173.106.237.53",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; nb-NO) AppleWebKit/531.42.3 (KHTML, like Gecko) Version/3.0.5 Mobile/8B113 Safari/6531.42.3",
+      "device_fingerprint_id": "521045c6-3733-45b6-a312-a6ce3467265d",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN043634",
+    "amount": 375.74,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T06:41:57.119323",
+    "customer_id": "user_stevenhodge",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "62.19.248.29",
+      "user_agent": "Mozilla/5.0 (Windows NT 4.0; ur-PK; rv:1.9.1.20) Gecko/7029-01-21 04:12:40 Firefox/3.8",
+      "device_fingerprint_id": "0e79a0ae-2f50-438b-a5de-d80ca2c3b8d2",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 4,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNECDCEE",
+    "amount": 1944.41,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T00:59:57.119441",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "70.60.255.250",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1) AppleWebKit/534.50.4 (KHTML, like Gecko) Version/5.0.5 Safari/534.50.4",
+      "device_fingerprint_id": "711698fb-e07b-4a3a-8269-0e4d55fd6dfb",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN2ABEF2",
+    "amount": 736.38,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T11:28:57.119503",
+    "customer_id": "user_padams",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "39.110.98.43",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows 98; Trident/5.0)",
+      "device_fingerprint_id": "d627a498-736d-4235-ac41-3229b61b54fe",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0E9419",
+    "amount": 1977.76,
+    "currency": "USD",
+    "transaction_date": "2025-10-24T15:25:57.119535",
+    "customer_id": "user_anthony05",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "31.131.71.124",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 6.2) AppleWebKit/533.50.2 (KHTML, like Gecko) Version/5.0.4 Safari/533.50.2",
+      "device_fingerprint_id": "74e49bab-32b6-40a2-ac0b-ccd1af6a08b5",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN514389",
+    "amount": 699.77,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T00:14:57.119595",
+    "customer_id": "user_sandragordon",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "91.194.186.180",
+      "user_agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_2) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/33.0.803.0 Safari/536.2",
+      "device_fingerprint_id": "52a55bf1-852f-4cc8-bb2f-6493c1bb8559",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNE8C8CF",
+    "amount": 454.87,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T20:36:57.119763",
+    "customer_id": "user_matthew12",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "70.60.255.250",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 17_3_1 like Mac OS X) AppleWebKit/535.0 (KHTML, like Gecko) FxiOS/12.4g8594.0 Mobile/96N083 Safari/535.0",
+      "device_fingerprint_id": "f5e37ad3-da1a-4f42-827d-acabca119617",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN611C0A",
+    "amount": 1645.63,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T21:09:57.119995",
+    "customer_id": "user_odomkara",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "115.172.71.223",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 5.01) AppleWebKit/534.28.4 (KHTML, like Gecko) Version/4.1 Safari/534.28.4",
+      "device_fingerprint_id": "1f0ae09e-f188-463c-828f-4acf0a9aa8a0",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 7,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN6CF9A6",
+    "amount": 1403.94,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T06:23:57.120066",
+    "customer_id": "user_hdickerson",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "49.169.58.179",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/3328-08-29 22:40:36 Firefox/6.0",
+      "device_fingerprint_id": "abe8771a-4838-4254-839a-3a806405be6a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC0A736",
+    "amount": 1844.88,
+    "currency": "USD",
+    "transaction_date": "2025-10-21T00:01:57.120177",
+    "customer_id": "user_kaiserjustin",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "24.26.193.155",
+      "user_agent": "Opera/8.73.(X11; Linux x86_64; ak-GH) Presto/2.9.160 Version/11.00",
+      "device_fingerprint_id": "9a6fce66-d47c-47e2-a91d-14f63d6bcf4b",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 0,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN3DCB51",
+    "amount": 16443.9,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T01:36:57.120210",
+    "customer_id": "user_hdickerson",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "18.157.145.119",
+      "user_agent": "Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.10.1 (KHTML, like Gecko) Version/5.1 Safari/532.10.1",
+      "device_fingerprint_id": "f1afd218-19d1-44be-9289-79eb19daa625",
+      "device_status": "New Device",
+      "ip_risk_score": 86,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNA9FA98",
+    "amount": 15267.64,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T07:15:57.120366",
+    "customer_id": "user_christinaherring",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "14.16.14.87",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Trident/4.1)",
+      "device_fingerprint_id": "c371f5a0-c31f-4105-9c95-0f980888c119",
+      "device_status": "New Device",
+      "ip_risk_score": 70,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXNFB2638",
+    "amount": 2161.27,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T14:37:57.120454",
+    "customer_id": "user_padams",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "39.110.98.43",
+      "user_agent": "Mozilla/5.0 (Android 3.2.3; Mobile; rv:64.0) Gecko/64.0 Firefox/64.0",
+      "device_fingerprint_id": "d627a498-736d-4235-ac41-3229b61b54fe",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC363DE",
+    "amount": 1790.41,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T02:49:57.120585",
+    "customer_id": "user_anthony21",
+    "counterparty_name": "gaming-platform-x",
+    "digital_footprint": {
+      "ip_address": "219.66.204.96",
+      "user_agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.1 (KHTML, like Gecko) Chrome/15.0.861.0 Safari/536.1",
+      "device_fingerprint_id": "b0478460-1477-43b9-b0b8-843e9bfdf66a",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNC66959",
+    "amount": 2159.58,
+    "currency": "USD",
+    "transaction_date": "2025-10-17T19:40:57.120642",
+    "customer_id": "user_chris57",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "109.132.250.58",
+      "user_agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_1) AppleWebKit/536.0 (KHTML, like Gecko) Chrome/28.0.871.0 Safari/536.0",
+      "device_fingerprint_id": "16a16da5-a050-4bb4-9f9e-b3a001fff860",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNCABE38",
+    "amount": 9619.81,
+    "currency": "USD",
+    "transaction_date": "2025-10-22T00:07:57.120694",
+    "customer_id": "user_drewolson",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "165.208.85.142",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/5.1)",
+      "device_fingerprint_id": "20a15dfc-3522-4810-9b3c-58ee4b6c2392",
+      "device_status": "New Device",
+      "ip_risk_score": 77,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN0CB33C",
+    "amount": 14867.91,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T04:50:57.120991",
+    "customer_id": "user_kimberlydavis",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "113.155.44.58",
+      "user_agent": "Opera/8.70.(Windows CE; nhn-MX) Presto/2.9.164 Version/10.00",
+      "device_fingerprint_id": "d320974f-d231-47d8-a066-26689b1cead9",
+      "device_status": "New Device",
+      "ip_risk_score": 90,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN9EE9B1",
+    "amount": 255.65,
+    "currency": "USD",
+    "transaction_date": "2025-10-18T17:25:57.121284",
+    "customer_id": "user_moorejeremy",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "34.71.131.168",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/531.2 (KHTML, like Gecko) CriOS/47.0.878.0 Mobile/15B345 Safari/531.2",
+      "device_fingerprint_id": "66b84db5-5d7f-4e6d-8bee-d7357ab4cb36",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 5,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN5FA97A",
+    "amount": 1484.0,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T20:33:57.121423",
+    "customer_id": "user_derekbarber",
+    "counterparty_name": "offshore-svc-ltd",
+    "digital_footprint": {
+      "ip_address": "123.60.10.183",
+      "user_agent": "Mozilla/5.0 (iPad; CPU iPad OS 13_5_1 like Mac OS X) AppleWebKit/533.2 (KHTML, like Gecko) FxiOS/15.0p4791.0 Mobile/57L051 Safari/533.2",
+      "device_fingerprint_id": "35295398-88a1-4556-9c14-ffdda4cadb76",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 2,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN0D1AFC",
+    "amount": 1782.76,
+    "currency": "USD",
+    "transaction_date": "2025-10-23T08:36:57.121590",
+    "customer_id": "user_gallagherchristopher",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "124.24.181.207",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2_1 like Mac OS X) AppleWebKit/535.0 (KHTML, like Gecko) CriOS/21.0.878.0 Mobile/92V746 Safari/535.0",
+      "device_fingerprint_id": "b4ae04e6-95a4-4838-9a72-cbf1d74ef63c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB11258",
+    "amount": 604.78,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T14:31:57.121658",
+    "customer_id": "user_bruce71",
+    "counterparty_name": "darkweb-market-gamma",
+    "digital_footprint": {
+      "ip_address": "125.171.206.83",
+      "user_agent": "Opera/8.99.(X11; Linux i686; mt-MT) Presto/2.9.179 Version/12.00",
+      "device_fingerprint_id": "f8507b7f-feb9-4388-88c3-280c5467cd0c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 6,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN4E6249",
+    "amount": 1638.28,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T06:37:57.121697",
+    "customer_id": "user_benjaminbrenda",
+    "counterparty_name": "crypto-exchange-alpha",
+    "digital_footprint": {
+      "ip_address": "30.215.119.172",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_7 rv:6.0; nds-NL) AppleWebKit/535.46.7 (KHTML, like Gecko) Version/4.0.3 Safari/535.46.7",
+      "device_fingerprint_id": "020516ef-11ba-4228-95bf-aeded946c810",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 3,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXN1164E8",
+    "amount": 8056.71,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T20:12:57.121755",
+    "customer_id": "user_danielseric",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "208.3.42.61",
+      "user_agent": "Mozilla/5.0 (iPod; U; CPU iPhone OS 3_0 like Mac OS X; raj-IN) AppleWebKit/533.12.7 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6533.12.7",
+      "device_fingerprint_id": "92583261-13cb-469b-901b-7474a012dc1a",
+      "device_status": "New Device",
+      "ip_risk_score": 100,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNDF2FA4",
+    "amount": 16963.02,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T22:33:57.121888",
+    "customer_id": "user_sarahsweeney",
+    "counterparty_name": "nft-marketplace-io",
+    "digital_footprint": {
+      "ip_address": "58.226.227.231",
+      "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows 98; Win 9x 4.90; Trident/5.1)",
+      "device_fingerprint_id": "5c2f9f05-de7b-41d8-9f8b-199e58a79db5",
+      "device_status": "New Device",
+      "ip_risk_score": 83,
+      "is_vpn": true
+    }
+  },
+  {
+    "transaction_id": "TXN7AB9C7",
+    "amount": 729.5,
+    "currency": "USD",
+    "transaction_date": "2025-10-19T10:06:57.122123",
+    "customer_id": "user_bruce71",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "125.171.206.83",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5; rv:1.9.2.20) Gecko/4764-10-29 15:59:31 Firefox/11.0",
+      "device_fingerprint_id": "f8507b7f-feb9-4388-88c3-280c5467cd0c",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 8,
+      "is_vpn": false
+    }
+  },
+  {
+    "transaction_id": "TXNB07CF6",
+    "amount": 2365.54,
+    "currency": "USD",
+    "transaction_date": "2025-10-20T19:07:57.122772",
+    "customer_id": "user_qalexander",
+    "counterparty_name": "wallet-invest-zeta",
+    "digital_footprint": {
+      "ip_address": "155.87.38.2",
+      "user_agent": "Mozilla/5.0 (Windows NT 6.0; es-BO; rv:1.9.1.20) Gecko/3003-08-15 02:45:20 Firefox/3.6.14",
+      "device_fingerprint_id": "7e164bfa-2432-46e1-956e-18969fc21ed2",
+      "device_status": "Trusted Device",
+      "ip_risk_score": 10,
+      "is_vpn": false
+    }
+  }
+]
