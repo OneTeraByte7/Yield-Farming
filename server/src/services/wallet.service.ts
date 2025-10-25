@@ -2,14 +2,28 @@ import supabase from '../config/supabase';
 
 export class WalletService {
   async getBalance(userId: string) {
-    const { data: wallet, error } = await supabase
+    let { data: wallet, error } = await supabase
       .from('wallets')
       .select('balance')
       .eq('user_id', userId)
       .single();
 
+    // If wallet doesn't exist, create one with initial balance
     if (error) {
-      throw new Error('Wallet not found');
+      const { data: newWallet, error: createError } = await supabase
+        .from('wallets')
+        .insert({
+          user_id: userId,
+          balance: 10000, // Initial demo balance
+        })
+        .select('balance')
+        .single();
+
+      if (createError) {
+        throw new Error('Failed to create wallet');
+      }
+
+      wallet = newWallet;
     }
 
     // Get total staked

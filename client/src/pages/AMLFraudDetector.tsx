@@ -9,13 +9,16 @@ export const AMLFraudDetector: React.FC = () => {
   const [searchParams] = useSearchParams();
   const screen = searchParams.get('screen') || 'dashboard';
 
+  // Get AML API URL from environment variable
+  const amlApiUrl = import.meta.env.VITE_AML_API_URL || 'https://yield-aml-detector.onrender.com';
+
   useEffect(() => {
     // Send theme to iframe when it loads or when theme changes
     const sendThemeToIframe = () => {
       if (iframeRef.current?.contentWindow) {
         iframeRef.current.contentWindow.postMessage(
           { type: 'THEME_CHANGE', theme },
-          window.location.origin
+          amlApiUrl
         );
       }
     };
@@ -34,24 +37,24 @@ export const AMLFraudDetector: React.FC = () => {
         iframe.removeEventListener('load', sendThemeToIframe);
       }
     };
-  }, [theme]);
+  }, [theme, amlApiUrl]);
 
   useEffect(() => {
     // Send screen change to iframe when screen parameter changes
     if (iframeRef.current?.contentWindow) {
       iframeRef.current.contentWindow.postMessage(
         { type: 'SCREEN_CHANGE', screen },
-        window.location.origin
+        amlApiUrl
       );
     }
-  }, [screen]);
+  }, [screen, amlApiUrl]);
 
   return (
     <Layout>
       <div className="h-[calc(100vh-4rem)] w-full overflow-hidden">
         <iframe
           ref={iframeRef}
-          src="/aml-fraud-detector/index.html"
+          src={amlApiUrl}
           className="w-full h-full border-0"
           title="AML Fraud Detector"
         />
