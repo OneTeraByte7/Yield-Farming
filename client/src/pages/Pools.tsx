@@ -3,6 +3,7 @@ import { Layout } from '@/components/layout/Layout';
 import { PoolList } from '@/components/pool/PoolList';
 import { PoolSyncButton } from '@/components/admin/PoolSyncButton';
 import { ScrollToTop } from '@/components/common/ScrollToTop';
+import { ErrorBoundary } from '@/components/common/ErrorBoundary';
 import { useAuthStore } from '@/store/authStore';
 import { Layers } from 'lucide-react';
 import { useRealtimePools } from '@/hooks/useRealtimePools';
@@ -80,8 +81,10 @@ export const Pools: React.FC = () => {
         {/* Info Banner - Memoized */}
         <InfoBanner />
 
-        {/* Pools Grid */}
-        <PoolList />
+        {/* Pools Grid - Wrapped with Error Boundary */}
+        <ErrorBoundary>
+          <PoolList />
+        </ErrorBoundary>
       </div>
 
       {/* Scroll to Top Button */}

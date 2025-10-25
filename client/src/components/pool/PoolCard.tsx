@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { TrendingUp, Coins, Users, Info } from 'lucide-react';
 import { Card } from '@/components/common/Card';
 import { Button } from '@/components/common/Button';
@@ -68,36 +68,43 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
     return 'bg-slate-500/10 dark:bg-slate-800/60 text-slate-700 dark:text-slate-100 border border-slate-500/25 dark:border-slate-600/50';
   };
 
-  // Use chain from pool data or extract from description as fallback
-  const chain = pool.chain || (() => {
+  // Use chain from pool data or extract from description as fallback - memoized
+  const chain = useMemo(() => {
+    if (pool.chain) return pool.chain;
     if (pool.description) {
       const match = pool.description.match(/\((.*?)\)/);
       return match ? match[1] : null;
     }
     return null;
-  })();
+  }, [pool.chain, pool.description]);
 
-  // Calculate pool age in days
-  const getPoolAge = () => {
-    const createdDate = new Date(pool.created_at);
-    const now = new Date();
-    const diffTime = Math.abs(now.getTime() - createdDate.getTime());
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  // Calculate pool age in days - memoized
+  const poolAge = useMemo(() => {
+    try {
+      const createdDate = new Date(pool.created_at);
+      const now = new Date();
+      const diffTime = Math.abs(now.getTime() - createdDate.getTime());
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-    if (diffDays < 30) {
-      return `${diffDays} day${diffDays !== 1 ? 's' : ''}`;
-    } else if (diffDays < 365) {
-      const months = Math.floor(diffDays / 30);
-      return `${months} month${months !== 1 ? 's' : ''}`;
-    } else {
-      const years = Math.floor(diffDays / 365);
-      return `${years} year${years !== 1 ? 's' : ''}`;
+      if (diffDays < 30) {
+        return `${diffDays} day${diffDays !== 1 ? 's' : ''}`;
+      } else if (diffDays < 365) {
+        const months = Math.floor(diffDays / 30);
+        return `${months} month${months !== 1 ? 's' : ''}`;
+      } else {
+        const years = Math.floor(diffDays / 365);
+        return `${years} year${years !== 1 ? 's' : ''}`;
+      }
+    } catch (error) {
+      return 'N/A';
     }
-  };
+  }, [pool.created_at]);
 
-  // Calculate daily and monthly earnings
-  const dailyEarnings = (1000 * pool.apy) / 100 / 365;
-  const monthlyEarnings = (1000 * pool.apy) / 100 / 12;
+  // Calculate daily and monthly earnings - memoized
+  const earnings = useMemo(() => ({
+    daily: ((1000 * (pool.apy || 0)) / 100 / 365),
+    monthly: ((1000 * (pool.apy || 0)) / 100 / 12)
+  }), [pool.apy]);
 
   return (
     <>
@@ -196,20 +203,20 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
                 <Tooltip content="Your Stake - The amount you have currently invested in this pool." />
               </div>
               <p className="text-base font-bold text-slate-900 dark:text-slate-100">
-                ${formatNumber(pool.yourStake)}
+                ${formatNumber(pool.yourStake || 0)}
               </p>
             </div>
           </div>
 
           {/* Pending Rewards with animation */}
-          {pool.pendingRewards > 0 && (
+          {(pool.pendingRewards || 0) > 0 && (
             <div className="relative overflow-hidden bg-gradient-to-r from-white/22 via-primary-500/18 to-primary-500/12 dark:from-emerald-900/40 dark:via-emerald-800/30 dark:to-emerald-900/25 border border-primary-500/30 dark:border-emerald-600/40 rounded-xl p-3 backdrop-blur-2xl animate-pulse shadow-royal mb-3">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 dark:via-emerald-500/15 to-transparent animate-shimmer"></div>
               <div className="flex items-center justify-between relative">
                 <div>
                   <p className="text-xs text-primary-700 dark:text-emerald-300 font-semibold uppercase tracking-wide mb-1">Pending Rewards</p>
                   <p className="text-xl font-extrabold text-slate-900 dark:text-emerald-50">
-                    {formatNumber(pool.pendingRewards)} {pool.token_symbol}
+                    {formatNumber(pool.pendingRewards || 0)} {pool.token_symbol}
                   </p>
                 </div>
                 <div className="w-12 h-12 bg-gradient-to-br from-primary-500 via-primary-600 to-primary-600 dark:from-emerald-600 dark:via-emerald-500 dark:to-emerald-600 rounded-2xl flex items-center justify-center shadow-royal animate-float">
@@ -368,7 +375,7 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
               <div className="flex justify-between items-center">
                 <span className="text-slate-600 dark:text-slate-400 font-medium">Pool Age:</span>
                 <span className="font-bold text-primary-700 dark:text-primary-300">
-                  {getPoolAge()}
+                  {poolAge}
                 </span>
               </div>
               {pool.total_stakers !== undefined && (
@@ -390,13 +397,13 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
               <div className="flex justify-between items-center">
                 <span className="text-slate-600 dark:text-slate-400 font-medium">Daily Earnings:</span>
                 <span className="font-bold text-emerald-700 dark:text-emerald-300">
-                  ${formatNumber(dailyEarnings)} / $1000
+                  ${formatNumber(earnings.daily)} / $1000
                 </span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-slate-600 dark:text-slate-400 font-medium">Monthly Earnings:</span>
                 <span className="font-bold text-emerald-700 dark:text-emerald-300">
-                  ${formatNumber(monthlyEarnings)} / $1000
+                  ${formatNumber(earnings.monthly)} / $1000
                 </span>
               </div>
               <div className="flex justify-between items-center">
@@ -440,7 +447,7 @@ export const PoolCard: React.FC<PoolCardProps> = ({ pool }) => {
             >
               Stake Now
             </Button>
-            {pool.yourStake > 0 && (
+            {(pool.yourStake || 0) > 0 && (
               <Button
                 variant="secondary"
                 className="flex-1 font-bold transform hover:scale-105 active:scale-95 transition-all"
