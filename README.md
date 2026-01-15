@@ -2,6 +2,38 @@
 
 > A modular yield-farming dashboard and backend toolkit with a React + Vite frontend and a TypeScript Node server. Includes an AML fraud detector demo and integrations for wallets, pools, staking and strategy tools.
 
+## Badges
+
+<!-- Shields: replace `OneTeraByte7/Yield-Farming` with your org/repo if different -->
+![GitHub stars](https://img.shields.io/github/stars/OneTeraByte7/Yield-Farming?style=social)
+![Forks](https://img.shields.io/github/forks/OneTeraByte7/Yield-Farming)
+
+![Top language](https://img.shields.io/github/languages/top/OneTeraByte7/Yield-Farming)
+![Language: TypeScript](https://img.shields.io/badge/language-TypeScript-blue?logo=typescript)
+![License](https://img.shields.io/github/license/OneTeraByte7/Yield-Farming)
+
+![Last commit](https://img.shields.io/github/last-commit/OneTeraByte7/Yield-Farming)
+![Open issues](https://img.shields.io/github/issues/OneTeraByte7/Yield-Farming)
+![Open PRs](https://img.shields.io/github/issues-pr/OneTeraByte7/Yield-Farming)
+
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+*(Tip: replace the GitHub Actions workflow filename `ci.yml` with your actual workflow file if different.)*
+
+## Trophies
+
+- 🏆 Active development: Regular updates and modular design
+- ⚙️ Tech stack: `React`, `Vite`, `TypeScript`, `Node.js`, `Python (demo)`
+- 🔒 Ready for integration: Supabase and wallet adapters included
+
+# Yield-Farming
+
+![1768488011509](image/README/1768488011509.png)
+---
+
+
+> A modular yield-farming dashboard and backend toolkit with a React + Vite frontend and a TypeScript Node server. Includes an AML fraud detector demo and integrations for wallets, pools, staking and strategy tools.
+
 ## Key Features
 - Modern frontend: React + Vite + TypeScript
 - Backend: TypeScript Node server with API controllers and routes
