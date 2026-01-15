@@ -1,4 +1,5 @@
 # Yield-Farming
+<img width="1024" height="443" alt="image" src="https://github.com/user-attachments/assets/8358f191-2ece-4ae0-afe0-211f3b56259b" />
 
 > A modular yield-farming dashboard and backend toolkit with a React + Vite frontend and a TypeScript Node server. Includes an AML fraud detector demo and integrations for wallets, pools, staking and strategy tools.
 
