@@ -27,13 +27,6 @@
 - ⚙️ Tech stack: `React`, `Vite`, `TypeScript`, `Node.js`, `Python (demo)`
 - 🔒 Ready for integration: Supabase and wallet adapters included
 
-# Yield-Farming
-
-![1768488011509](image/README/1768488011509.png)
----
-
-
-> A modular yield-farming dashboard and backend toolkit with a React + Vite frontend and a TypeScript Node server. Includes an AML fraud detector demo and integrations for wallets, pools, staking and strategy tools.
 
 ## Key Features
 - Modern frontend: React + Vite + TypeScript
